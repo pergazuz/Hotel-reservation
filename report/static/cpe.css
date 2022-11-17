@@ -9,9 +9,10 @@
 html  body{
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 line-height: 1,7em;
+background-color: #1A1718;
 }
 a{
-  color:#333;
+  color:#1A1718;
   text-decoration: none;
 }
 h1,h2,h3 {
@@ -25,9 +26,10 @@ p{
 /* Utility Classes */
 .container{
   margin:auto;
-  max-width: 1100px;
+  max-width: 1500px;
   overflow:auto;
   padding:0 20px;
+  
 }
 
 .text-primary{
@@ -42,34 +44,36 @@ p{
   display:inline-block;
   font-size:18px;
   color:#fff;
-  background:#333;
+  background:#1A1718;
   padding:13px 20px;
   border:none;
   cursor:pointer;
 }
 
-.btn:hover{
+/* .btn:hover{
   background:#f7c08a;
   color:#333
-}
+} */
+
+
 .btn-light {
-  background: #f4f4f4;
-  color: #333;
+  background: #1A1718;
+  color: #1A1718;
 }
 
 .bg-dark {
-  background: #333;
+  background: #1A1718;
   color: #fff;
 }
 
 .bg-light {
-  background: #f4f4f4;
-  color: #333;
+  background: #1A1718;
+  color: #1A1718;
 }
 
 .bg-primary {
   background: #f7c08a;
-  color: #333;
+  color: #1A1718;
 }
 .clr{
     clear:both;
@@ -85,27 +89,35 @@ p{
 
 /* Navbar */
 #navbar{
-  background:#333;
-  color:#fff;
+  background:#1A1718;
+  color:#928427;
   overflow:auto;
+  float: center;
 }
 
 #navbar a{
-  color:#fff
+  color:#928427;
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 80px;
+  
 }
 
 #navbar h1{
   float:left;
-  padding-top:20px;
+ 
 }
 
 #navbar ul{
   list-style:none;
-  float:right;
+  position: relative;
+  float:none;
 }
 
 #navbar ul li {
-float:left;
+float:right;
 }
 
 #navbar ul li a{
@@ -114,10 +126,35 @@ float:left;
   text-align: center;
 }
 
-#navbar ul li a:hover,
+
 #navbar ul li a.current{
-  background:#444;
-  color:#f7c08a;
+  background:#1A1718;
+  
+}
+
+#navbar li a {
+  display: inline-block;
+  position: relative;
+  color: #928427;
+  
+}
+
+#navbar li a:hover:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #928427;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+#navbar ul li a:hover:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 /* showcase */
@@ -137,8 +174,11 @@ float:left;
 }
 
 #showcase .showcase-content h1{
-  font-size:75px;
-  line-height:1.2em;
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 62px;
 }
 
 #showcase .showcase-content p {
@@ -226,7 +266,7 @@ float:left;
   opacity: 0.85;
 }
 #contact-form .form-group{
-  mairgin-bottom:20px;
+  margin-bottom:20px;
 }
 #contact-form label{
   display:block;
@@ -245,4 +285,135 @@ float:left;
 #contact-form input:focus, #contact-form textarea:focus {
   outline:none;
   border-color:#f7c08a
+}
+
+.column1,.column2 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  padding-left: 150px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.stars{
+  position: absolute;
+  color: #928427;
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+ 
+}
+
+.find{
+  position: absolute;
+  color: #FFFFFF;
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 100px;
+  
+}
+.des_main{
+  font-family: 'Open Sans';
+  padding-top: 20px;
+  width: 526px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+  line-height: 22px;
+  float: left;
+}
+
+.room1_main{
+  
+  width: 300px;
+  height: 200px;
+  
+}
+
+.room2_main{
+  
+  width: 300px;
+  height: 200px;
+  
+}
+
+.navmid{
+  float: left;
+  padding-left: 400px;
+}
+
+button {
+  border: #928427;
+  border-radius: 41px;
+  color: #928427;
+  background-color: #1A1718;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn {
+  border: 2px solid black;
+  background-color: #1A1718;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  
+}
+
+
+.login {
+  border-color: #928427;
+  color: #928427;
+  position: absolute;
+  width: 135px;
+  left: 1294px;
+  top: 24px;
+}
+
+
+
+.bookroom {
+  border-color: #928427;
+  color: #FFFFFF;
+  width: 215px;
 }
