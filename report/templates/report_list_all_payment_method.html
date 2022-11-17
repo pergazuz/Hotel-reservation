@@ -1,0 +1,28 @@
+{% extends 'index.html' %}
+
+{% block title %}
+<h1>Report Payment Method.</h1>
+{% endblock %}
+
+{% block content %}
+    
+    <table id='maintable' class='table'>
+        <tr>
+            <th>#</th>
+            {% for name in column_name %}
+            <th>{{ name }} </th>
+            {% endfor %}
+        </tr>
+    {% for lineitem in data %}
+        <tr>
+            <td>{{ forloop.counter }}</td>
+            <td>{{ lineitem.payment_method }}</td>
+            <td>{{ lineitem.description }}</td>
+        <tr>
+    {% endfor %}
+    
+{% endblock %}
+    
+
+</body>
+</html>

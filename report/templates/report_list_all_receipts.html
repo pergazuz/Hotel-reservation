@@ -1,0 +1,57 @@
+{% extends 'index.html' %}
+
+{% block title %}
+<h1>Report All Receipt.</h1>
+{% endblock %}
+
+{% block content %}
+
+{% for name in Receipt_num %}
+    
+    <table id='maintable' class='table'>
+        <tr>
+            <th>#</th>
+            {% for name in column_name1 %}
+            <th>{{ name }} </th>
+            {% endfor %}
+        </tr>
+        {% for lineitem in data1 %}
+        <tr>
+            {% if lineitem.receipt_no == name %}
+                <td>{{ forloop.counter }}</td>
+                <td>{{ lineitem.receipt_no }}</td>
+                <td>{{ lineitem.date }}</td>
+                <td>{{ lineitem.customer_code }}</td>
+                <td>{{ lineitem.customer_name }}</td>
+                <td>{{ lineitem.payment_name }}</td>
+                <td>{{ lineitem.total_received }}</td>
+                <td>{{ lineitem.payment_reference }}</td>
+                <td>{{ lineitem.remarks }}</td>
+            {% endif %}
+        <tr>
+        {% endfor %}
+        <h1>{{name}}</h1>
+        <table id='maintable' class='table'>
+            <tr>
+                <th>#</th>
+                {% for name in column_name2 %}
+                    <th>{{ name}} </th>
+                {% endfor %}
+            </tr>
+        {% for lineitem in data2 %}
+            <tr>
+                {% if lineitem.receipt_no == name %}
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{ lineitem.invoice_no }}</td>
+                    <td>{{ lineitem.invoice_date }}</td>
+                    <td>{{ lineitem.invoice_full_amount }}</td>
+                    <td>{{ lineitem.amount_paid_here }}</td>
+                {% endif %}
+            <tr>
+        {% endfor %}
+{% endfor %}
+{% endblock %}
+    
+
+</body>
+</html>
