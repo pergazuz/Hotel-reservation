@@ -31,7 +31,57 @@ p{
   padding:0 20px;
   justify-content: center;
 }
+.container1_1{
+border-radius: 22px;
+background-color: #928427;
+position: absolute;
+width: 279px;
+height: 45px;
+left: 711px;
+top: 280px;
 
+}
+
+.container1_1_2{
+  /* login */
+border-radius: 22px;
+background-color: #928427;
+position: absolute;
+width: 166px;
+height: 43px;
+left: 1080px;
+top: 280px;
+
+}
+
+.container1_1_3{
+/* Rectangle 20 */
+position: absolute;
+width: 151px;
+height: 43px;
+left: 736px;
+top: 506px;
+background: #D9D9D9;
+}
+.container1_1_4{
+  /* Rectangle 19 */
+position: absolute;
+width: 1073px;
+height: 197px;
+left: 209px;
+top: 604px;
+
+background: #D9D9D9;
+}
+.container1_1_5{
+  border-radius: 22px;
+  background-color:#928427;
+  position: absolute;
+  width: 190px;
+  height: 43px;
+  left: 1094px;
+  top: 500px;
+}
 .text-primary{
   color:#f7c08a;
 }
@@ -332,7 +382,252 @@ float:right;
   font-size: 30px;
  
 }
+.Cliveden_standard{
+/* Cliveden-Standard room */
 
+
+position: absolute;
+width: 276px;
+height: 32px;
+left: 208px;
+top: 153px;
+
+font-family: 'Frank Ruhl Libre';
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 32px;
+
+color: #928427;
+
+}
+
+.Cliveden_Standard_des{
+  /* Cliveden-Standard room feature a king-sized bed, luxurious bedding, and complimentary high-speed wi-fi. This room for 1-2 people. */
+
+
+position: absolute;
+width: 1110px;
+height: 34px;
+left: 208px;
+top: 203px;
+
+font-family: 'Frank Ruhl Libre';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 26px;
+
+color: #FFFFFF;
+
+
+}
+
+.find_roomtype1_1{
+  /* Guest Room Features */
+position: absolute;
+width: 238px;
+height: 32px;
+left: 729px;
+top: 287px;
+
+font-family: 'Frank Ruhl Libre';
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 32px;
+
+color: #FFFFFF;
+
+}
+
+.find_roomtype1_2{
+  /* Services */
+
+
+position: absolute;
+width: 95px;
+height: 30px;
+left: 1115px;
+top: 285px;
+
+font-family: 'Frank Ruhl Libre';
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 32px;
+
+color: #FFFFFF;
+
+}
+
+.find_roomtype1_3{
+  /* $ 200 / day */
+position: absolute;
+width: 128px;
+height: 30px;
+left: 766px;
+top: 513px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 25px;
+
+color: #928427;
+}
+
+.find_roomtype1_4{
+position: absolute;
+width: 190px;
+height: 43px;
+left: 1138px;
+top: 508px;  
+
+font-family: 'Frank Ruhl Libre';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 26px;
+/* identical to box height */
+color: #1A1718;
+}
+
+.find_roomtype1_5{
+  /* Bathrobes and slippers In-room amenities Minibar Safety deposit box */
+position: absolute;
+width: 197px;
+height: 122px;
+left: 722px;
+top: 340px;
+font-family: 'Frank Ruhl Libre';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+
+color: #FFFFFF;
+}
+
+.find_roomtype1_6{
+  position: absolute;
+width: 195px;
+height: 105px;
+left: 1080px;
+top: 340px;
+
+font-family: 'Frank Ruhl Libre';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+
+color: #FFFFFF;
+}
+
+.btn_booknow1{
+  /* login */
+position: relative;
+width: 190px;
+height: 43px;
+border: #928427;
+}
+.roomtype1_main{
+  /* image 24 */
+
+
+position: absolute;
+width: 477px;
+height: 268px;
+left: 208px;
+top: 289px;
+
+background: url('./pic/roomtype1.jpg'); 
+}
+.roomtype1_1_main{
+  /* image 40 */
+
+
+position: absolute;
+width: 210px;
+height: 184px;
+left: 214px;
+top: 605px;
+
+background: url('./pic/roomtype1_1.jpg');
+border-radius: 22px;
+}
+
+.roomtype1_2_main{
+  /* image 42 */
+
+
+position: absolute;
+width: 295px;
+height: 185px;
+left: 431px;
+top: 603px;
+
+background: url('./pic/roomtype1_2.jpg');
+border-radius: 25px;
+}
+
+.roomtype1_3_main{
+/* image 49 */
+
+
+position: absolute;
+width: 139px;
+height: 185px;
+left: 736px;
+top: 602px;
+
+background: url('./pic/roomtype1_3.jpg');
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+border-radius: 22px;
+}
+
+
+.roomtype1_4_main{
+    /* image 50 */
+
+
+position: absolute;
+width: 93px;
+height: 185px;
+left: 890px;
+top: 602px;
+
+background: url('./pic/roomtype1_4.jpg');
+border-radius: 25px;
+}
+
+.roomtype1_5_main{
+  /* image 55 */
+
+
+position: absolute;
+width: 139px;
+height: 185px;
+left: 991px;
+top: 603px;
+
+background: url('./pic/roomtype1_5.jpg');
+border-radius: 25px;
+}
+      
+.roomtype1_6_main{
+  /* image 56 */
+position: absolute;
+width: 139px;
+height: 185px;
+left: 1136px;
+top: 603px;
+
+background: url('./pic/roomtype1_6.jpg');
+border-radius: 22px;
+}
 .find{
   position: absolute;
   color: #FFFFFF;
