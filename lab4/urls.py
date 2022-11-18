@@ -24,6 +24,7 @@ urlpatterns = [
     path('contact', views.contact, name='contact'),
     path('room', views.room, name='room'),
     path('gallery', views.gallery, name='gallery'),
+    path('roomtype', views.roomtype, name='roomtype'),
     path('ReportListAllInvoices', views.ReportListAllInvoices),
     path('ReportProductsSold',views.ReportProductsSold),
     path('ReportListAllProducts',views.ReportListAllProducts),

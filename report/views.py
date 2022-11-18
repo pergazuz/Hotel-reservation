@@ -177,3 +177,6 @@ def room(request):
 
 def gallery(request):
     return render(request, 'gallery.html')
+
+def roomtype(request):
+    return render(request, 'roomtype.html')
