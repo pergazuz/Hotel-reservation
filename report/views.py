@@ -118,6 +118,8 @@ def ReportListAllReceipts(request):
 
     return render(request, 'report_list_all_receipts.html', dataReport1)
 
+def roomtype(request):
+    return render(request, 'roomtype.html')
 
 def ReportListAllPaymentMethod(request):
 
