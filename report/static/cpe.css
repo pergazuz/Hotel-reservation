@@ -489,3 +489,180 @@ button {
 }
 
 
+.l-heading4{
+  /* TO KNOW OUR LUXURY STORY */
+  position: absolute;
+  width: 450px;
+  height: 26px;
+  left: 492px;
+  top: 265px;
+
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.l-heading3{
+/* ABOUT US */
+
+position: absolute;
+width: 450px;
+height: 26px;
+left: 492px;
+top: 216px;
+
+font-family: 'Frank Ruhl Libre';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 39px;
+/* identical to box height */
+
+text-align: center;
+
+color: #928427;
+}
+
+#about-info .info-right4 img{
+  /* image 3 */
+position: absolute;
+width: 100%;
+height: 302px;
+left: 1px;
+top: 112px;
+background: url('./pic/aboutuson.jpg');
+-webkit-filter: brightness(30%);
+filter: brightness(30%);
+}
+#about-info .info-right1 img{
+  /* image 3 */
+  position: absolute;
+  width: 341px;
+  height: 208px;
+  left: 10%;
+  top: 1051px;
+  
+  background: url('./pic/aboutuson1.jpg');
+  border-radius: 49px;
+}
+
+#about-info .info-right2 img{
+  position: absolute;
+  width: 369px;
+  height: 205px;
+  left: 580px;
+  top: 1054px;
+  background: url('./pic/aboutuson2.jpg');
+  border-radius: 49px;
+}
+#about-info .info-right3 img{
+  position: absolute;
+  width: 337px;
+  height: 208px;
+  right: 10%; ;
+  top: 1051px;
+  background: url('./pic/aboutuson3.jpg');
+  border-radius: 49px;
+}
+
+.description1{
+  position: absolute;
+  width: 738px;
+  height: 234px;
+  left: 25%;
+  top: 464px;
+
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.description2{
+  /* Stay with us to experience understated elegance and your happiness is our duty */
+
+
+  position: absolute;
+  width: 535px;
+  height: 62px;
+  left: 30%;
+  top: 724px;
+
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 31px;
+  text-align: center;
+
+  color: #FFFFFF;
+
+}
+
+.description3{
+  /* “Cliveden hotel” */
+  position: absolute;
+  width: 360px;
+  height: 65px;
+  left: 35%;
+  top: 922px;
+
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+
+  color: #FFFFFF;
+
+}
+
+.description4{
+  /* “ */
+  position: absolute;
+  width: 61px;
+  height: 165px;
+  left: 138px;
+  top: 448px;
+
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 128px;
+  line-height: 165px;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.description5{
+  /* “ */
+  position: absolute;
+  width: 61px;
+  height: 165px;
+  right: 138px;
+  top: 712px;
+
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 128px;
+  line-height: 165px;
+  text-align: center;
+
+  color: #FFFFFF;
+
+  transform: rotate(-180deg);
+}
