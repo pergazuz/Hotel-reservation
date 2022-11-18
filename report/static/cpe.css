@@ -29,7 +29,7 @@ p{
   max-width: 3500px;
   overflow:auto;
   padding:0 20px;
-  
+  justify-content: center;
 }
 
 .text-primary{
@@ -494,7 +494,7 @@ button {
   position: absolute;
   width: 450px;
   height: 26px;
-  left: 492px;
+  left: 35%;
   top: 265px;
 
   font-family: 'Frank Ruhl Libre';
@@ -515,7 +515,7 @@ button {
 position: absolute;
 width: 450px;
 height: 26px;
-left: 492px;
+left: 35%;
 top: 216px;
 
 font-family: 'Frank Ruhl Libre';
@@ -576,7 +576,7 @@ filter: brightness(30%);
   position: absolute;
   width: 738px;
   height: 234px;
-  left: 25%;
+  left: 25.7%;
   top: 464px;
 
   font-family: 'Frank Ruhl Libre';
@@ -596,7 +596,7 @@ filter: brightness(30%);
   position: absolute;
   width: 535px;
   height: 62px;
-  left: 30%;
+  left: 32%;
   top: 724px;
 
   font-family: 'Frank Ruhl Libre';
@@ -615,8 +615,9 @@ filter: brightness(30%);
   position: absolute;
   width: 360px;
   height: 65px;
-  left: 35%;
+  left: 38%;
   top: 922px;
+  justify-content: center;
 
   font-family: 'Frank Ruhl Libre';
   font-style: normal;
