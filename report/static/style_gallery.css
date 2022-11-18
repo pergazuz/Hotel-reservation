@@ -1,0 +1,70 @@
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+
+
+.room_gallery{
+    margin-top: 20px;
+    position: absolute;
+    background-color: blanchedalmond;
+    margin-left: 50%;
+}
+
+.Standard_room{
+
+    border: 2px solid red;
+
+    width: 50%;
+
+    
+    
+}
+
+.Superior_room{
+ 
+    border: 2px solid rgb(86, 29, 219);
+   
+    display: flex;
+    clear: both;
+    width: 50%;
+}
+
+.Deluxe_room{
+    border: 2px solid rgb(14, 226, 71);
+    width: 45% ;
+    
+}
+
+
+  .column {
+    float: left;
+    width: 50%;
+    display: block;
+    padding-left: 50px;
+
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: block;
+    clear: both;
+    border: px solid rgb(208, 23, 23);
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }

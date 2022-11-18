@@ -172,3 +172,6 @@ def contact(request):
 
 def room(request):
     return render(request, 'room.html')
+
+def gallery(request):
+    return render(request, 'gallery.html')
