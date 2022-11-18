@@ -340,7 +340,6 @@ float:right;
   font-style: normal;
   font-weight: 500;
   font-size: 100px;
-  
 }
 .des_main{
   font-family: 'Open Sans';
@@ -447,6 +446,23 @@ button {
   font-size: 30px;
   border-radius: 15px;
 }
+
+.flex-container2 {
+  display: flex;
+  justify-content: center;
+
+}
+
+.flex-container2 > div {
+  background-color: #f1f1f1;
+  width: 450px;
+  margin: 60px;
+  text-align: left;
+  line-height: 250px;
+  font-size: 30px;
+  border-radius: 15px;
+}
+
 
 .room{
  
@@ -667,3 +683,11 @@ filter: brightness(30%);
 
   transform: rotate(-180deg);
 }
+
+.select{
+  text-decoration: underline;
+  text-decoration-thickness: 2px; 
+  text-underline-offset: 12px;
+ 
+}
+
