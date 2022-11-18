@@ -20,6 +20,7 @@ from report import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='Index'),
+    path('about', views.about, name='about'),
     path('ReportListAllInvoices', views.ReportListAllInvoices),
     path('ReportProductsSold',views.ReportProductsSold),
     path('ReportListAllProducts',views.ReportListAllProducts),

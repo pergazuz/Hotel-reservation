@@ -164,4 +164,8 @@ def ReportUnpaidInvoices(request):
 
     return render(request, 'report_unpaid_invoices.html', dataReport)
 
+def about(request):
+    return render(request, 'about.html')
 
+def home(request):
+    return render(request, 'home.html')
