@@ -10,7 +10,7 @@ from django.db import connection
 # Create your views here.
 from django.http import JsonResponse
 def index(request):
-    return render(request, 'index.html')
+    return render(request, 'home.html')
 
 
 def ReportListAllProducts(request):
