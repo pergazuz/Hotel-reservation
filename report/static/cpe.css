@@ -26,7 +26,7 @@ p{
 /* Utility Classes */
 .container{
   margin:auto;
-  max-width: 1500px;
+  max-width: 3500px;
   overflow:auto;
   padding:0 20px;
   
@@ -388,7 +388,7 @@ button {
 .btn {
   border: 2px solid black;
   background-color: #1A1718;
-  color: black;
+  color: #928427;
   padding: 14px 28px;
   font-size: 16px;
   cursor: pointer;
@@ -396,7 +396,7 @@ button {
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 26px;
+  line-height: 15px;
   
 }
 
@@ -408,12 +408,84 @@ button {
   width: 135px;
   left: 1294px;
   top: 24px;
+  font-weight: 900;
 }
 
-
+.login:hover {
+  border-color: #928427;
+  color: #1A1718;
+  position: absolute;
+  width: 135px;
+  left: 1294px;
+  top: 24px;
+  background-color: #928427;
+}
 
 .bookroom {
   border-color: #928427;
-  color: #FFFFFF;
+  color: #928427;
   width: 215px;
 }
+
+.bookroom:hover{
+  background-color: #928427;
+  color: #fdfdfd;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 400px;
+  margin: 30px;
+  text-align: left;
+  line-height: 250px;
+  font-size: 30px;
+  border-radius: 15px;
+}
+
+.room{
+ 
+  padding-left: 30px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  color: #262626;
+}
+
+.room_price{
+
+  padding-top: 20px;
+  padding-left: 30px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 25px;
+  color: #928427;
+}
+
+.room_type{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 14px;
+  padding-left: 31px;
+  color: #8E8E8E;
+  padding-bottom: 20px;
+}
+
+.fa-solid fa-cart-shopping{
+  position: absolute;
+  width: 318px;
+  height: 244px;
+  left: 1071px;
+  top: 840px;
+  padding-left: 40px;
+}
+
+
