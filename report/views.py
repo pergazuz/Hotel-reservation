@@ -180,3 +180,9 @@ def gallery(request):
 
 def roomtype(request):
     return render(request, 'roomtype.html')
+def roomtype1(request):
+    return render(request, 'roomtype1.html')
+def roomtype2(request):
+    return render(request, 'roomtype2.html')
+def roomtype3(request):
+    return render(request, 'roomtype3.html')

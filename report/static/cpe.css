@@ -82,6 +82,62 @@ background: #D9D9D9;
   left: 1094px;
   top: 500px;
 }
+.container2_1_3{
+  /* Rectangle 20 */
+  position: absolute;
+  width: 151px;
+  height: 43px;
+  left: 736px;
+  top: 546px;
+  background: #D9D9D9;
+  }
+  .container2_1_4{
+    /* Rectangle 19 */
+  position: absolute;
+  width: 1073px;
+  height: 197px;
+  left: 209px;
+  top: 644px;
+  
+  background: #D9D9D9;
+  }
+.container2_1_5{
+  border-radius: 22px;
+  background-color:#928427;
+  position: absolute;
+  width: 190px;
+  height: 43px;
+  left: 1094px;
+  top: 540px;
+}
+.container3_1_3{
+  /* Rectangle 20 */
+  position: absolute;
+  width: 151px;
+  height: 43px;
+  left: 736px;
+  top: 586px;
+  background: #D9D9D9;
+  }
+  .container3_1_4{
+    /* Rectangle 19 */
+  position: absolute;
+  width: 1073px;
+  height: 197px;
+  left: 209px;
+  top: 684px;
+  
+  background: #D9D9D9;
+  }
+.container3_1_5{
+  border-radius: 22px;
+  background-color:#928427;
+  position: absolute;
+  width: 190px;
+  height: 43px;
+  left: 1094px;
+  top: 580px;
+}
 .text-primary{
   color:#f7c08a;
 }
@@ -525,7 +581,140 @@ line-height: 21px;
 
 color: #FFFFFF;
 }
+.find_roomtype2_1{
+  /* Guest Room Features */
+position: absolute;
+width: 238px;
+height: 32px;
+left: 729px;
+top: 287px;
 
+font-family: 'Frank Ruhl Libre';
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 32px;
+
+color: #FFFFFF;
+
+}
+
+.find_roomtype2_2{
+  /* Services */
+
+
+position: absolute;
+width: 95px;
+height: 30px;
+left: 1115px;
+top: 285px;
+
+font-family: 'Frank Ruhl Libre';
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 32px;
+
+color: #FFFFFF;
+
+}
+
+.find_roomtype2_3{
+  /* $ 200 / day */
+position: absolute;
+width: 128px;
+height: 30px;
+left: 766px;
+top: 553px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 25px;
+
+color: #928427;
+}
+
+.find_roomtype2_4{
+position: absolute;
+width: 190px;
+height: 43px;
+left: 1138px;
+top: 548px;  
+
+font-family: 'Frank Ruhl Libre';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 26px;
+/* identical to box height */
+color: #1A1718;
+}
+
+.find_roomtype2_5{
+  /* Bathrobes and slippers In-room amenities Minibar Safety deposit box */
+position: absolute;
+width: 240px;
+height: 122px;
+left: 722px;
+top: 340px;
+font-family: 'Frank Ruhl Libre';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+
+color: #FFFFFF;
+}
+
+.find_roomtype2_6{
+  position: absolute;
+width: 195px;
+height: 105px;
+left: 1080px;
+top: 340px;
+
+font-family: 'Frank Ruhl Libre';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+
+color: #FFFFFF;
+}
+.find_roomtype3_3{
+  /* $ 600 / day */
+position: absolute;
+width: 128px;
+height: 30px;
+left: 766px;
+top: 593px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 25px;
+
+color: #928427;
+}
+
+.find_roomtype3_4{
+position: absolute;
+width: 190px;
+height: 43px;
+left: 1138px;
+top: 588px;  
+
+font-family: 'Frank Ruhl Libre';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 26px;
+/* identical to box height */
+color: #1A1718;
+}
 .btn_booknow1{
   /* login */
 position: relative;
@@ -626,6 +815,196 @@ left: 1136px;
 top: 603px;
 
 background: url('./pic/roomtype1_6.jpg');
+border-radius: 22px;
+}
+.roomtype2_main{
+  /* image 24 */
+
+
+position: absolute;
+width: 477px;
+height: 268px;
+left: 208px;
+top: 289px;
+
+background: url('./pic/roomtype2.jpg'); 
+}
+.roomtype2_1_main{
+  /* image 40 */
+
+
+position: absolute;
+width: 210px;
+height: 184px;
+left: 214px;
+top: 645px;
+
+background: url('./pic/roomtype2_1.jpg');
+border-radius: 22px;
+}
+
+.roomtype2_2_main{
+  /* image 42 */
+
+
+position: absolute;
+width: 295px;
+height: 185px;
+left: 431px;
+top: 643px;
+
+background: url('./pic/roomtype2_2.jpg');
+border-radius: 25px;
+}
+
+.roomtype2_3_main{
+/* image 49 */
+
+
+position: absolute;
+width: 139px;
+height: 185px;
+left: 736px;
+top: 642px;
+
+background: url('./pic/roomtype2_3.jpg');
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+border-radius: 22px;
+}
+
+
+.roomtype2_4_main{
+    /* image 50 */
+
+
+position: absolute;
+width: 93px;
+height: 185px;
+left: 890px;
+top: 642px;
+
+background: url('./pic/roomtype2_4.jpg');
+border-radius: 25px;
+}
+
+.roomtype2_5_main{
+  /* image 55 */
+
+
+position: absolute;
+width: 139px;
+height: 185px;
+left: 991px;
+top: 643px;
+
+background: url('./pic/roomtype2_5.jpg');
+border-radius: 25px;
+}
+      
+.roomtype2_6_main{
+  /* image 56 */
+position: absolute;
+width: 139px;
+height: 185px;
+left: 1136px;
+top: 643px;
+
+background: url('./pic/roomtype2_6.jpg');
+border-radius: 22px;
+}
+.roomtype3_main{
+  /* image 24 */
+
+
+position: absolute;
+width: 477px;
+height: 268px;
+left: 208px;
+top: 289px;
+
+background: url('./pic/roomtype3.jpg'); 
+}
+.roomtype3_1_main{
+  /* image 40 */
+
+
+position: absolute;
+width: 210px;
+height: 184px;
+left: 214px;
+top: 685px;
+
+background: url('./pic/roomtype3_1.jpg');
+border-radius: 22px;
+}
+
+.roomtype3_2_main{
+  /* image 42 */
+
+
+position: absolute;
+width: 295px;
+height: 185px;
+left: 431px;
+top: 683px;
+
+background: url('./pic/roomtype3_2.jpg');
+border-radius: 25px;
+}
+
+.roomtype3_3_main{
+/* image 49 */
+
+
+position: absolute;
+width: 139px;
+height: 185px;
+left: 736px;
+top: 682px;
+
+background: url('./pic/roomtype3_3.jpg');
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+border-radius: 22px;
+}
+
+
+.roomtype3_4_main{
+    /* image 50 */
+
+
+position: absolute;
+width: 93px;
+height: 185px;
+left: 890px;
+top: 682px;
+
+background: url('./pic/roomtype3_4.jpg');
+border-radius: 25px;
+}
+
+.roomtype3_5_main{
+  /* image 55 */
+
+
+position: absolute;
+width: 139px;
+height: 185px;
+left: 991px;
+top: 683px;
+
+background: url('./pic/roomtype3_5.jpg');
+border-radius: 25px;
+}
+      
+.roomtype3_6_main{
+  /* image 56 */
+position: absolute;
+width: 139px;
+height: 185px;
+left: 1136px;
+top: 683px;
+
+background: url('./pic/roomtype3_6.jpg');
 border-radius: 22px;
 }
 .find{
