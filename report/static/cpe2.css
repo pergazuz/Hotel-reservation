@@ -29,59 +29,9 @@ p{
   max-width: 3500px;
   overflow:auto;
   padding:0 20px;
-  justify-content: center;
-}
-.container1_1{
-border-radius: 22px;
-background-color: #928427;
-position: absolute;
-width: 279px;
-height: 45px;
-left: 711px;
-top: 280px;
-
+  
 }
 
-.container1_1_2{
-  /* login */
-border-radius: 22px;
-background-color: #928427;
-position: absolute;
-width: 166px;
-height: 43px;
-left: 1080px;
-top: 280px;
-
-}
-
-.container1_1_3{
-/* Rectangle 20 */
-position: absolute;
-width: 151px;
-height: 43px;
-left: 736px;
-top: 506px;
-background: #D9D9D9;
-}
-.container1_1_4{
-  /* Rectangle 19 */
-position: absolute;
-width: 1073px;
-height: 197px;
-left: 209px;
-top: 604px;
-
-background: #D9D9D9;
-}
-.container1_1_5{
-  border-radius: 22px;
-  background-color:#928427;
-  position: absolute;
-  width: 190px;
-  height: 43px;
-  left: 1094px;
-  top: 500px;
-}
 .text-primary{
   color:#f7c08a;
 }
@@ -382,252 +332,7 @@ float:right;
   font-size: 30px;
  
 }
-.Cliveden_standard{
-/* Cliveden-Standard room */
 
-
-position: absolute;
-width: 276px;
-height: 32px;
-left: 208px;
-top: 153px;
-
-font-family: 'Frank Ruhl Libre';
-font-style: normal;
-font-weight: 500;
-font-size: 25px;
-line-height: 32px;
-
-color: #928427;
-
-}
-
-.Cliveden_Standard_des{
-  /* Cliveden-Standard room feature a king-sized bed, luxurious bedding, and complimentary high-speed wi-fi. This room for 1-2 people. */
-
-
-position: absolute;
-width: 1110px;
-height: 34px;
-left: 208px;
-top: 203px;
-
-font-family: 'Frank Ruhl Libre';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 26px;
-
-color: #FFFFFF;
-
-
-}
-
-.find_roomtype1_1{
-  /* Guest Room Features */
-position: absolute;
-width: 238px;
-height: 32px;
-left: 729px;
-top: 287px;
-
-font-family: 'Frank Ruhl Libre';
-font-style: normal;
-font-weight: 500;
-font-size: 25px;
-line-height: 32px;
-
-color: #FFFFFF;
-
-}
-
-.find_roomtype1_2{
-  /* Services */
-
-
-position: absolute;
-width: 95px;
-height: 30px;
-left: 1115px;
-top: 285px;
-
-font-family: 'Frank Ruhl Libre';
-font-style: normal;
-font-weight: 500;
-font-size: 25px;
-line-height: 32px;
-
-color: #FFFFFF;
-
-}
-
-.find_roomtype1_3{
-  /* $ 200 / day */
-position: absolute;
-width: 128px;
-height: 30px;
-left: 766px;
-top: 513px;
-
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 25px;
-
-color: #928427;
-}
-
-.find_roomtype1_4{
-position: absolute;
-width: 190px;
-height: 43px;
-left: 1138px;
-top: 508px;  
-
-font-family: 'Frank Ruhl Libre';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 26px;
-/* identical to box height */
-color: #1A1718;
-}
-
-.find_roomtype1_5{
-  /* Bathrobes and slippers In-room amenities Minibar Safety deposit box */
-position: absolute;
-width: 197px;
-height: 122px;
-left: 722px;
-top: 340px;
-font-family: 'Frank Ruhl Libre';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 21px;
-
-color: #FFFFFF;
-}
-
-.find_roomtype1_6{
-  position: absolute;
-width: 195px;
-height: 105px;
-left: 1080px;
-top: 340px;
-
-font-family: 'Frank Ruhl Libre';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 21px;
-
-color: #FFFFFF;
-}
-
-.btn_booknow1{
-  /* login */
-position: relative;
-width: 190px;
-height: 43px;
-border: #928427;
-}
-.roomtype1_main{
-  /* image 24 */
-
-
-position: absolute;
-width: 477px;
-height: 268px;
-left: 208px;
-top: 289px;
-
-background: url('./pic/roomtype1.jpg'); 
-}
-.roomtype1_1_main{
-  /* image 40 */
-
-
-position: absolute;
-width: 210px;
-height: 184px;
-left: 214px;
-top: 605px;
-
-background: url('./pic/roomtype1_1.jpg');
-border-radius: 22px;
-}
-
-.roomtype1_2_main{
-  /* image 42 */
-
-
-position: absolute;
-width: 295px;
-height: 185px;
-left: 431px;
-top: 603px;
-
-background: url('./pic/roomtype1_2.jpg');
-border-radius: 25px;
-}
-
-.roomtype1_3_main{
-/* image 49 */
-
-
-position: absolute;
-width: 139px;
-height: 185px;
-left: 736px;
-top: 602px;
-
-background: url('./pic/roomtype1_3.jpg');
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-border-radius: 22px;
-}
-
-
-.roomtype1_4_main{
-    /* image 50 */
-
-
-position: absolute;
-width: 93px;
-height: 185px;
-left: 890px;
-top: 602px;
-
-background: url('./pic/roomtype1_4.jpg');
-border-radius: 25px;
-}
-
-.roomtype1_5_main{
-  /* image 55 */
-
-
-position: absolute;
-width: 139px;
-height: 185px;
-left: 991px;
-top: 603px;
-
-background: url('./pic/roomtype1_5.jpg');
-border-radius: 25px;
-}
-      
-.roomtype1_6_main{
-  /* image 56 */
-position: absolute;
-width: 139px;
-height: 185px;
-left: 1136px;
-top: 603px;
-
-background: url('./pic/roomtype1_6.jpg');
-border-radius: 22px;
-}
 .find{
   position: absolute;
   color: #FFFFFF;
@@ -635,6 +340,7 @@ border-radius: 22px;
   font-style: normal;
   font-weight: 500;
   font-size: 100px;
+  
 }
 .des_main{
   font-family: 'Open Sans';
@@ -742,23 +448,6 @@ button {
   border-radius: 15px;
 }
 
-.flex-container2 {
-  display: flex;
-  justify-content: center;
-
-}
-
-.flex-container2 > div {
-  background-color: #f1f1f1;
-  width: 450px;
-  margin: 60px;
-  text-align: left;
-  line-height: 250px;
-  font-size: 30px;
-  border-radius: 15px;
-}
-
-
 .room{
  
   padding-left: 30px;
@@ -799,215 +488,6 @@ button {
   padding-left: 40px;
 }
 
-
-.l-heading4{
-  /* TO KNOW OUR LUXURY STORY */
-  position: absolute;
-  width: 450px;
-  height: 26px;
-  left: 35%;
-  top: 265px;
-
-  font-family: 'Frank Ruhl Libre';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
-  /* identical to box height */
-
-  text-align: center;
-
-  color: #FFFFFF;
-}
-
-.l-heading3{
-/* ABOUT US */
-
-position: absolute;
-width: 450px;
-height: 26px;
-left: 35%;
-top: 216px;
-
-font-family: 'Frank Ruhl Libre';
-font-style: normal;
-font-weight: 700;
-font-size: 30px;
-line-height: 39px;
-/* identical to box height */
-
-text-align: center;
-
-color: #928427;
-}
-
-#about-info .info-right4 img{
-  /* image 3 */
-position: absolute;
-width: 100%;
-height: 302px;
-left: 1px;
-top: 112px;
-background: url('./pic/aboutuson.jpg');
--webkit-filter: brightness(30%);
-filter: brightness(30%);
-}
-#about-info .info-right1 img{
-  /* image 3 */
-  position: absolute;
-  width: 341px;
-  height: 208px;
-  left: 10%;
-  top: 1051px;
-  
-  background: url('./pic/aboutuson1.jpg');
-  border-radius: 49px;
-}
-
-#about-info .info-right2 img{
-  position: absolute;
-  width: 369px;
-  height: 205px;
-  left: 580px;
-  top: 1054px;
-  background: url('./pic/aboutuson2.jpg');
-  border-radius: 49px;
-}
-#about-info .info-right3 img{
-  position: absolute;
-  width: 337px;
-  height: 208px;
-  right: 10%; ;
-  top: 1051px;
-  background: url('./pic/aboutuson3.jpg');
-  border-radius: 49px;
-}
-
-.description1{
-  position: absolute;
-  width: 738px;
-  height: 234px;
-  left: 25.7%;
-  top: 464px;
-
-  font-family: 'Frank Ruhl Libre';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
-  text-align: center;
-
-  color: #FFFFFF;
-}
-
-.description2{
-  /* Stay with us to experience understated elegance and your happiness is our duty */
-
-
-  position: absolute;
-  width: 535px;
-  height: 62px;
-  left: 32%;
-  top: 724px;
-
-  font-family: 'Frank Ruhl Libre';
-  font-style: normal;
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 31px;
-  text-align: center;
-
-  color: #FFFFFF;
-
-}
-
-.description3{
-  /* “Cliveden hotel” */
-  position: absolute;
-  width: 360px;
-  height: 65px;
-  left: 38%;
-  top: 922px;
-  justify-content: center;
-
-  font-family: 'Frank Ruhl Libre';
-  font-style: normal;
-  font-weight: 900;
-  font-size: 40px;
-  line-height: 52px;
-  text-align: center;
-
-  color: #FFFFFF;
-
-}
-
-.description4{
-  /* “ */
-  position: absolute;
-  width: 61px;
-  height: 165px;
-  left: 138px;
-  top: 448px;
-
-  font-family: 'Frank Ruhl Libre';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 128px;
-  line-height: 165px;
-  text-align: center;
-
-  color: #FFFFFF;
-}
-
-.description5{
-  /* “ */
-  position: absolute;
-  width: 61px;
-  height: 165px;
-  right: 138px;
-  top: 712px;
-
-  font-family: 'Frank Ruhl Libre';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 128px;
-  line-height: 165px;
-  text-align: center;
-
-  color: #FFFFFF;
-
-  transform: rotate(-180deg);
-}
-
-.select{
-  text-decoration: underline;
-  text-decoration-thickness: 2px; 
-  text-underline-offset: 12px;
- 
-}
-
-.box3 {
-  color: rgb(250, 250, 250);
-  line-height: 0.5;
-  padding-right: 15px;
-  margin-bottom: -80px;
-}
-
-.box2 {
-  color: rgb(174, 151, 38);
-}
-
-.box3{
-  float:left;
-  widows: 33.5%;
-  padding:60px;
-  text-align:center;
-}
-
-.box3 i{
-  margin-bottom:10px;
-}
-
 .container4{
   position: absolute;
   width: 505px;
@@ -1016,6 +496,13 @@ filter: brightness(30%);
   top: calc(65% - 549px/2 + 46.5px);
 }
 
+.container5{
+  position: absolute;
+  width: 578px;
+  height: 326px;
+  left: 520px;
+  top: 1px;
+}
 
 .container6{
   position: absolute;
@@ -1090,6 +577,7 @@ filter: brightness(30%);
 }
 
 
+
 .container13{
   font-family: 'Frank Ruhl Libre';
   font-style: normal;
@@ -1100,11 +588,30 @@ filter: brightness(30%);
   text-align: center;
 }
 
-.fa-solid fa-cart-shopping{
-  position: absolute;
-  width: 318px;
-  height: 244px;
-  left: 1071px;
-  top: 840px;
-  padding-left: 40px;
+.box3 {
+  color: rgb(250, 250, 250);
+  line-height: 0.5;
+  padding-right: 15px;
+  margin-bottom: -80px;
 }
+
+.box2 {
+  color: rgb(174, 151, 38);
+}
+
+
+.container12{
+  padding-right: 50%;
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  right:50%
+}
+
+/* .container20{
+  width: 50%;
+  height: auto;
+} */
