@@ -1365,3 +1365,125 @@ filter: brightness(30%);
  
 }
 
+.box3 {
+  color: rgb(250, 250, 250);
+  line-height: 0.5;
+  padding-right: 15px;
+  margin-bottom: -80px;
+}
+
+.box2 {
+  color: rgb(174, 151, 38);
+}
+
+.box3{
+  float:left;
+  widows: 33.5%;
+  padding:60px;
+  text-align:center;
+}
+
+.box3 i{
+  margin-bottom:10px;
+}
+
+.container4{
+  position: absolute;
+  width: 505px;
+  height: 549px;
+  left: calc(45.5% - 505px/2 - 301.5px);
+  top: calc(65% - 549px/2 + 46.5px);
+}
+
+
+.container6{
+  position: absolute;
+  width: 600px;
+  height: 30px;
+  left: 13%;
+  top: 540px;
+  
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  
+  color: #FFFFFF;
+}
+
+.container7{
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 5px;
+  padding-left: 150px;
+
+}
+
+.container8{
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 5px;
+ 
+
+}
+
+.container9{
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 5px;
+  padding-left: 0.5px;
+
+
+}
+
+.container10{
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 5px;
+  padding-left: -30px;
+
+}
+
+.container11{
+  position: absolute;
+  width: 505px;
+  height: 700px;
+  left: calc(10% - 505px/2 - 301.5px);
+  top: calc(720% - 549px/2 + 46.5px);
+  
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+  text-align: center;
+}
+
+
+.container13{
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+
+  text-align: center;
+}
+
+.fa-solid fa-cart-shopping{
+  position: absolute;
+  width: 318px;
+  height: 244px;
+  left: 1071px;
+  top: 840px;
+  padding-left: 40px;
+}
