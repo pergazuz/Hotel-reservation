@@ -1,0 +1,1334 @@
+*{  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Main Styling */
+html  body{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+line-height: 1,7em;
+background-color: #1A1718;
+}
+a{
+  color:#1A1718;
+  text-decoration: none;
+}
+h1,h2,h3 {
+  padding-bottom:20px;
+}
+
+p{
+  margin:10px 0;
+}
+
+/* Utility Classes */
+.container{
+  margin:auto;
+  max-width: 3500px;
+  overflow:auto;
+  padding:0 20px;
+  justify-content: center;
+}
+.container1_1{
+border-radius: 22px;
+background-color: #928427;
+position: absolute;
+width: 279px;
+height: 45px;
+left: 711px;
+top: 280px;
+
+}
+
+.container1_1_2{
+  /* login */
+border-radius: 22px;
+background-color: #928427;
+position: absolute;
+width: 166px;
+height: 43px;
+left: 1080px;
+top: 280px;
+
+}
+
+.container1_1_3{
+/* Rectangle 20 */
+position: absolute;
+width: 151px;
+height: 43px;
+left: 736px;
+top: 506px;
+background: #D9D9D9;
+}
+.container1_1_4{
+  /* Rectangle 19 */
+position: absolute;
+width: 1073px;
+height: 197px;
+left: 209px;
+top: 604px;
+
+background: #D9D9D9;
+}
+.container1_1_5{
+  border-radius: 22px;
+  background-color:#928427;
+  position: absolute;
+  width: 190px;
+  height: 43px;
+  left: 1094px;
+  top: 500px;
+}
+.text-primary{
+  color:#f7c08a;
+}
+
+.lead{
+  font-size:20px;
+}
+
+.btn{
+  display:inline-block;
+  font-size:18px;
+  color:#fff;
+  background:#1A1718;
+  padding:13px 20px;
+  border:none;
+  cursor:pointer;
+}
+
+/* .btn:hover{
+  background:#f7c08a;
+  color:#333
+} */
+
+
+.btn-light {
+  background: #1A1718;
+  color: #1A1718;
+}
+
+.bg-dark {
+  background: #1A1718;
+  color: #fff;
+}
+
+.bg-light {
+  background: #1A1718;
+  color: #1A1718;
+}
+
+.bg-primary {
+  background: #f7c08a;
+  color: #1A1718;
+}
+.clr{
+    clear:both;
+}
+.l-heading{
+    font-size:40px;
+}
+
+/* Padding */
+.py-1{padding:10px 0 ;}
+.py-2{padding:20px 0 ;}
+.py-3{padding:30px 0 ;}
+
+/* Navbar */
+#navbar{
+  background:#1A1718;
+  color:#928427;
+  overflow:auto;
+  float: center;
+}
+
+#navbar a{
+  color:#928427;
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 80px;
+  
+}
+
+#navbar h1{
+  float:left;
+ 
+}
+
+#navbar ul{
+  list-style:none;
+  position: relative;
+  float:none;
+}
+
+#navbar ul li {
+float:right;
+}
+
+#navbar ul li a{
+  display:block;
+  padding:20px;
+  text-align: center;
+}
+
+
+#navbar ul li a.current{
+  background:#1A1718;
+  
+}
+
+#navbar li a {
+  display: inline-block;
+  position: relative;
+  color: #928427;
+  
+}
+
+#navbar li a:hover:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #928427;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+#navbar ul li a:hover:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* showcase */
+/* 
+#showcase{
+  background-image: url('../img/showcase.jpg'); no-repeat 
+  center center/cover;
+  height: 1050px;
+  
+}
+*/
+
+#showcase .showcase-content{
+  color:#fff;
+  text-align:center;
+  padding-top:500px;
+}
+
+#showcase .showcase-content h1{
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 62px;
+}
+
+#showcase .showcase-content p {
+  padding-bottom:20px;
+  line-height: 1.7em;
+}
+#home-info {
+  height: 400px;
+}
+
+#home-info .info-img {
+  float: left;
+  width: 50%;
+  background: url('../img/photo-1.jpg') no-repeat;
+  min-height: 100%;
+  
+}
+
+#home-info .info-content {
+  float: right;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding: 50px 30px;
+  overflow: hidden;
+  
+}
+
+#home-info .info-content p {
+  padding-bottom: 30px;
+}
+/* Features */
+.box{
+  float:left;
+  widows: 33.5%;
+  padding:60px;
+  text-align:center;
+}
+
+.box i{
+  margin-bottom:10px;
+}
+
+/* About Info */
+#about-info .info-right{
+  float:right;
+  width:50%;
+  min-height:100%;
+}
+#about-info .info-left{
+  float:left;
+  width:50%;
+  min-height: 100%;
+}
+
+#about-info .info-right img{
+  display:block;
+  margin:auto;
+  width:70%;
+  border-radius:50%;
+}
+#testimonials{
+  height:600px;
+  background:url('../img/test-bg.jpg') no-repeat center center/cover;
+  padding-top:100px;
+}
+
+#testimonials .testimonial img{
+  width:100px;
+  float:left;
+  margin-right:40px;
+  border-radius:50%;
+}
+
+#testimonials  h2{
+  color:#fff;
+  text-align:center;
+  padding-bottom:55px;
+}
+
+#testimonials .testimonial{
+  padding:20px;
+  margin-bottom:40px;
+  border-radius:5px;
+  opacity: 0.85;
+}
+#contact-form .form-group{
+  margin-bottom:20px;
+}
+#contact-form label{
+  display:block;
+  margin-bottom:5px;
+}
+
+#contact-form input, #contact-form textarea {
+  width:100%;
+  padding:10px;
+  border:1px #ddd slod;
+}
+
+#contact-form textarea{
+  height:200px;
+}
+#contact-form input:focus, #contact-form textarea:focus {
+  outline:none;
+  border-color:#f7c08a
+}
+
+.column1,.column2 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  padding-left: 150px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.stars{
+  position: absolute;
+  color: #928427;
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+ 
+}
+.Cliveden_standard{
+/* Cliveden-Standard room */
+
+
+position: absolute;
+width: 276px;
+height: 32px;
+left: 208px;
+top: 153px;
+
+font-family: 'Frank Ruhl Libre';
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 32px;
+
+color: #928427;
+
+}
+
+.Cliveden_Standard_des{
+  /* Cliveden-Standard room feature a king-sized bed, luxurious bedding, and complimentary high-speed wi-fi. This room for 1-2 people. */
+
+
+position: absolute;
+width: 1110px;
+height: 34px;
+left: 208px;
+top: 203px;
+
+font-family: 'Frank Ruhl Libre';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 26px;
+
+color: #FFFFFF;
+
+
+}
+
+.find_roomtype1_1{
+  /* Guest Room Features */
+position: absolute;
+width: 238px;
+height: 32px;
+left: 729px;
+top: 287px;
+
+font-family: 'Frank Ruhl Libre';
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 32px;
+
+color: #FFFFFF;
+
+}
+
+.find_roomtype1_2{
+  /* Services */
+
+
+position: absolute;
+width: 95px;
+height: 30px;
+left: 1115px;
+top: 285px;
+
+font-family: 'Frank Ruhl Libre';
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 32px;
+
+color: #FFFFFF;
+
+}
+
+.find_roomtype1_3{
+  /* $ 200 / day */
+position: absolute;
+width: 128px;
+height: 30px;
+left: 766px;
+top: 513px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 25px;
+
+color: #928427;
+}
+
+.find_roomtype1_4{
+position: absolute;
+width: 190px;
+height: 43px;
+left: 1138px;
+top: 508px;  
+
+font-family: 'Frank Ruhl Libre';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 26px;
+/* identical to box height */
+color: #1A1718;
+}
+
+.find_roomtype1_5{
+  /* Bathrobes and slippers In-room amenities Minibar Safety deposit box */
+position: absolute;
+width: 197px;
+height: 122px;
+left: 722px;
+top: 340px;
+font-family: 'Frank Ruhl Libre';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+
+color: #FFFFFF;
+}
+
+.find_roomtype1_6{
+  position: absolute;
+width: 195px;
+height: 105px;
+left: 1080px;
+top: 340px;
+
+font-family: 'Frank Ruhl Libre';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+
+color: #FFFFFF;
+}
+
+.btn_booknow1{
+  /* login */
+position: relative;
+width: 190px;
+height: 43px;
+border: #928427;
+}
+.roomtype1_main{
+  /* image 24 */
+
+
+position: absolute;
+width: 477px;
+height: 268px;
+left: 208px;
+top: 289px;
+
+background: url('./pic/roomtype1.jpg'); 
+}
+.roomtype1_1_main{
+  /* image 40 */
+
+
+position: absolute;
+width: 210px;
+height: 184px;
+left: 214px;
+top: 605px;
+
+background: url('./pic/roomtype1_1.jpg');
+border-radius: 22px;
+}
+
+.roomtype1_2_main{
+  /* image 42 */
+
+
+position: absolute;
+width: 295px;
+height: 185px;
+left: 431px;
+top: 603px;
+
+background: url('./pic/roomtype1_2.jpg');
+border-radius: 25px;
+}
+
+.roomtype1_3_main{
+/* image 49 */
+
+
+position: absolute;
+width: 139px;
+height: 185px;
+left: 736px;
+top: 602px;
+
+background: url('./pic/roomtype1_3.jpg');
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+border-radius: 22px;
+}
+
+
+.roomtype1_4_main{
+    /* image 50 */
+
+
+position: absolute;
+width: 93px;
+height: 185px;
+left: 890px;
+top: 602px;
+
+background: url('./pic/roomtype1_4.jpg');
+border-radius: 25px;
+}
+
+.roomtype1_5_main{
+  /* image 55 */
+
+
+position: absolute;
+width: 139px;
+height: 185px;
+left: 991px;
+top: 603px;
+
+background: url('./pic/roomtype1_5.jpg');
+border-radius: 25px;
+}
+      
+.roomtype1_6_main{
+  /* image 56 */
+position: absolute;
+width: 139px;
+height: 185px;
+left: 1136px;
+top: 603px;
+
+background: url('./pic/roomtype1_6.jpg');
+border-radius: 22px;
+}
+.find{
+  position: absolute;
+  color: #FFFFFF;
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 100px;
+}
+.des_main{
+  font-family: 'Open Sans';
+  padding-top: 20px;
+  width: 526px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+  line-height: 22px;
+  float: left;
+}
+
+.room1_main{
+  
+  width: 300px;
+  height: 200px;
+  
+}
+
+.room2_main{
+  
+  width: 300px;
+  height: 200px;
+  
+}
+
+.navmid{
+  float: left;
+  padding-left: 400px;
+}
+
+button {
+  border: #928427;
+  border-radius: 41px;
+  color: #928427;
+  background-color: #1A1718;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn {
+  border: 2px solid black;
+  background-color: #1A1718;
+  color: #928427;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 15px;
+  
+}
+
+
+.login {
+  border-color: #928427;
+  color: #928427;
+  position: absolute;
+  width: 135px;
+  left: 1294px;
+  top: 24px;
+  font-weight: 900;
+}
+
+.login:hover {
+  border-color: #928427;
+  color: #1A1718;
+  position: absolute;
+  width: 135px;
+  left: 1294px;
+  top: 24px;
+  background-color: #928427;
+}
+
+.bookroom {
+  border-color: #928427;
+  color: #928427;
+  width: 215px;
+}
+
+.bookroom:hover{
+  background-color: #928427;
+  color: #fdfdfd;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 400px;
+  margin: 30px;
+  text-align: left;
+  line-height: 250px;
+  font-size: 30px;
+  border-radius: 15px;
+}
+
+.flex-container2 {
+  display: flex;
+  justify-content: center;
+
+}
+
+.flex-container2 > div {
+  background-color: #f1f1f1;
+  width: 450px;
+  margin: 60px;
+  text-align: left;
+  line-height: 250px;
+  font-size: 30px;
+  border-radius: 15px;
+}
+
+
+.room{
+ 
+  padding-left: 30px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  color: #262626;
+}
+
+.room_price{
+
+  padding-top: 20px;
+  padding-left: 30px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 25px;
+  color: #928427;
+}
+
+.room_type{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 14px;
+  padding-left: 31px;
+  color: #8E8E8E;
+  padding-bottom: 20px;
+}
+
+.fa-solid fa-cart-shopping{
+  position: absolute;
+  width: 318px;
+  height: 244px;
+  left: 1071px;
+  top: 840px;
+  padding-left: 40px;
+}
+
+
+.l-heading4{
+  /* TO KNOW OUR LUXURY STORY */
+  position: absolute;
+  width: 450px;
+  height: 26px;
+  left: 35%;
+  top: 265px;
+
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.l-heading3{
+/* ABOUT US */
+
+position: absolute;
+width: 450px;
+height: 26px;
+left: 35%;
+top: 216px;
+
+font-family: 'Frank Ruhl Libre';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 39px;
+/* identical to box height */
+
+text-align: center;
+
+color: #928427;
+}
+
+#about-info .info-right4 img{
+  /* image 3 */
+position: absolute;
+width: 100%;
+height: 302px;
+left: 1px;
+top: 112px;
+background: url('./pic/aboutuson.jpg');
+-webkit-filter: brightness(30%);
+filter: brightness(30%);
+}
+#about-info .info-right1 img{
+  /* image 3 */
+  position: absolute;
+  width: 341px;
+  height: 208px;
+  left: 10%;
+  top: 1051px;
+  
+  background: url('./pic/aboutuson1.jpg');
+  border-radius: 49px;
+}
+
+#about-info .info-right2 img{
+  position: absolute;
+  width: 369px;
+  height: 205px;
+  left: 580px;
+  top: 1054px;
+  background: url('./pic/aboutuson2.jpg');
+  border-radius: 49px;
+}
+#about-info .info-right3 img{
+  position: absolute;
+  width: 337px;
+  height: 208px;
+  right: 10%; ;
+  top: 1051px;
+  background: url('./pic/aboutuson3.jpg');
+  border-radius: 49px;
+}
+
+.description1{
+  position: absolute;
+  width: 738px;
+  height: 234px;
+  left: 25.7%;
+  top: 464px;
+
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.description2{
+  /* Stay with us to experience understated elegance and your happiness is our duty */
+
+
+  position: absolute;
+  width: 535px;
+  height: 62px;
+  left: 32%;
+  top: 724px;
+
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 31px;
+  text-align: center;
+
+  color: #FFFFFF;
+
+}
+
+.description3{
+  /* “Cliveden hotel” */
+  position: absolute;
+  width: 360px;
+  height: 65px;
+  left: 38%;
+  top: 922px;
+  justify-content: center;
+
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+
+  color: #FFFFFF;
+
+}
+
+.description4{
+  /* “ */
+  position: absolute;
+  width: 61px;
+  height: 165px;
+  left: 138px;
+  top: 448px;
+
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 128px;
+  line-height: 165px;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.description5{
+  /* “ */
+  position: absolute;
+  width: 61px;
+  height: 165px;
+  right: 138px;
+  top: 712px;
+
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 128px;
+  line-height: 165px;
+  text-align: center;
+
+  color: #FFFFFF;
+
+  transform: rotate(-180deg);
+}
+
+.select{
+  text-decoration: underline;
+  text-decoration-thickness: 2px; 
+  text-underline-offset: 12px;
+ 
+}
+
+.room_up1{
+  position: absolute;
+  width: 167px;
+  height: 109px;
+  left: 152px;
+  top: 188px;
+}
+
+.room_up2{
+  position: absolute;
+  width: 149px;
+  height: 114px;
+  left: 780px;
+  top: 187px;
+}
+
+.room_up3{
+  position: absolute;
+  width: 213px;
+  height: 112px;
+  left: calc(43% - 200px/2 - 401.5px);
+  top: 580px;
+}
+
+.room_up4{
+  position: absolute;
+  width: 114px;
+  height: 113px;
+  left: 782px;
+  top: 574px;
+} 
+
+
+
+.container2_1_1{
+  /* Rectangle 22 */
+  position: absolute;
+  width: 230px;
+  height: 33px;
+  left: 350px;
+  top: 134px;
+
+  background: #D9D9D9;
+  border-radius: 35px;
+}
+.stantdard{
+  /* Cliveden-Standard room */
+  position: absolute;
+  width: 199px;
+  height: 23px;
+  left: 375px;
+  top: 140px;
+
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: #928427;
+}
+
+.container2_1_2{
+  /* Rectangle 37 */
+  position: absolute;
+  width: 230px;
+  height: 33px;
+  left: 965px;
+  top: 132px;
+
+  background: #D9D9D9;
+  border-radius: 35px;
+}
+
+.superior{
+  /* Cliveden-Superior room */
+  position: absolute;
+  width: 198px;
+  height: 23px;
+  left: 993px;
+  top: 137px;
+
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: #928427;
+}
+
+.container2_1_3{
+  /* Rectangle 36 */
+  position: absolute;
+  width: 230px;
+  height: 33px;
+  left: 350px;
+  top: 525px;
+
+  background: #D9D9D9;
+  border-radius: 35px;
+}
+
+.deluxe{
+  /* Cliveden-Deluxe room */
+  position: absolute;
+  width: 183px;
+  height: 23px;
+  left: 385px;
+  top: 532px;
+
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: #928427;
+}
+
+.container2_1_4{
+  /* Rectangle 38 */
+  position: absolute;
+  width: 230px;
+  height: 33px;
+  left: 965px;
+  top: 525px;
+
+  background: #D9D9D9;
+  border-radius: 35px;
+}
+
+.suite{
+  /* Cliveden-Deluxe room */
+  position: absolute;
+  width: 183px;
+  height: 23px;
+  left: 1003px;
+  top: 532px;
+
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: #928427;
+}
+
+.container2_2_1{
+  /* Facilities */
+  position: absolute;
+  width: 195px;
+  height: 62px;
+  left: 647px;
+  top: 870px;
+
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 62px;
+
+  color: #FFFFFF;
+}
+
+.swim_pool{
+  position: absolute;
+  width: 224px;
+  height: 145px;
+  left: 162px;
+  top: 1100px;
+}
+
+.container2_2_2{
+  /* Rectangle 34 */
+  position: absolute;
+  width: 149px;
+  height: 29px;
+  left: 240px;
+  top: 1050px;
+
+  background: #D9D9D9;
+  border-radius: 35px;
+}
+
+.swimming{
+  /* Swimming pool */
+  position: absolute;
+  width: 113px;
+  height: 21px;
+  left: 262px;
+  top: 1054px;
+
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: #000000;
+}
+
+.fitness{
+  position: absolute;
+  width: 195px;
+  height: 145px;
+  left: 480px;
+  top: 1100px;
+}
+
+.container2_2_3{
+  /* Rectangle 35 */
+  position: absolute;
+  width: 149px;
+  height: 29px;
+  left: 550px;
+  top: 1050px;
+
+  background: #D9D9D9;
+  border-radius: 35px;
+}
+
+.fitness1{
+  position: absolute;
+  width: 51px;
+  height: 21px;
+  left: 602px;
+  top: 1054px;
+
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: #000000;
+}
+
+.restau{
+  position: absolute;
+  width: 250px;
+  height: 373px;
+  left: 790px;
+  top: 1100px;
+}
+
+.container2_2_4{
+  /* Rectangle 30 */
+  position: absolute;
+  width: 149px;
+  height: 29px;
+  left: 1008px;
+  top: 1050px;
+
+  background: #D9D9D9;
+  border-radius: 35px;
+}
+
+.restaurant{
+  position: absolute;
+  width: 78px;
+  height: 21px;
+  left: 1050px;
+  top: 1054px;
+
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: #000000;
+}
+
+.kids_club{
+  position: absolute;
+  width: 224px;
+  height: 148px;
+  left: 162px;
+  top: 1336px;
+}
+
+.container2_2_5{
+  /* Rectangle 32 */
+  position: absolute;
+  width: 149px;
+  height: 29px;
+  left: 240px;
+  top: 1280px;
+
+  background: #D9D9D9;
+  border-radius: 35px;
+}
+
+.kid{
+  position: absolute;
+  width: 68px;
+  height: 21px;
+  left: 285px;
+  top: 1285px;
+
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: #000000;
+}
+
+.lob{
+  position: absolute;
+  width: 195px;
+  height: 149px;
+  left: 480px;
+  top: 1336px;
+}
+
+.container2_2_6{
+  /* Rectangle 33 */
+  position: absolute;
+  width: 149px;
+  height: 29px;
+  left: 550px;
+  top: 1280px;
+
+  background: #D9D9D9;
+  border-radius: 35px;
+}
+
+.lobby{
+  position: absolute;
+  width: 45px;
+  height: 21px;
+  left: 605px;
+  top: 1285px;
+
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: #000000;
+}
