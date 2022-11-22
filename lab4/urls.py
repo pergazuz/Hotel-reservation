@@ -28,11 +28,22 @@ urlpatterns = [
     path('roomtype1', views.roomtype1, name='roomtype1'),
     path('roomtype2', views.roomtype2, name='roomtype2'),
     path('roomtype3', views.roomtype3, name='roomtype3'),
-    path('ReportListAllInvoices', views.ReportListAllInvoices),
-    path('ReportProductsSold',views.ReportProductsSold),
-    path('ReportListAllProducts',views.ReportListAllProducts),
-    path('ReportListAllPaymentMethod',views.ReportListAllPaymentMethod),
-    path('ReportListAllReceipts',views.ReportListAllReceipts),
-    path('ReportUnpaidInvoices',views.ReportUnpaidInvoices),
+    path('regis', views.regis, name='regis'),
+    path('login', views.login.as_view(), name='login'),
+   
+
+    #path('ReportListAllInvoices', views.ReportListAllInvoices),
+    #path('ReportProductsSold',views.ReportProductsSold),
+    #path('ReportListAllProducts',views.ReportListAllProducts),
+    #path('ReportListAllPaymentMethod',views.ReportListAllPaymentMethod),
+    #path('ReportListAllReceipts',views.ReportListAllReceipts),
+    #path('ReportUnpaidInvoices',views.ReportUnpaidInvoices),
+    
+    path('customer/list', views.CustomerList.as_view(), name='customer_list'), 
+    path('customer/get', views.customer), 
+    path('customer/get/<customer_code>', views.CustomerGet.as_view(), name='customer_get'), 
+    path('customer/save', views.CustomerSave.as_view(), name='customer_save'),   
+    path('customer/save2', views.CustomerSave2.as_view(), name='customer_save2'), 
+    path('customer/delete', views.CustomerDelete.as_view(), name='customer_delete'), 
     
 ]

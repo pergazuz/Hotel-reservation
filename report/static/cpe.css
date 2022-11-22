@@ -226,26 +226,26 @@ background: #D9D9D9;
 float:right;
 }
 
-#navbar ul li a{
+#navbar ul li a.nav{
   display:block;
   padding:20px;
   text-align: center;
 }
 
 
-#navbar ul li a.current{
+#navbar ul li a.nav.current{
   background:#1A1718;
   
 }
 
-#navbar li a {
+#navbar li a.nav {
   display: inline-block;
   position: relative;
   color: #928427;
   
 }
 
-#navbar li a:hover:after {
+#navbar li a.nav:hover:after {
   content: '';
   position: absolute;
   width: 100%;
@@ -258,7 +258,7 @@ float:right;
   transition: transform 0.25s ease-out;
 }
 
-#navbar ul li a:hover:hover:after {
+#navbar ul li a.nav:hover:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -1112,7 +1112,7 @@ button {
 }
 
 .flex-container > div {
-  background-color: #f1f1f1;
+  
   width: 400px;
   margin: 30px;
   text-align: left;
@@ -1130,7 +1130,7 @@ button {
 .flex-container2 > div {
   background-color: #f1f1f1;
   width: 450px;
-  margin: 60px;
+  margin: 35px;
   text-align: left;
   line-height: 250px;
   font-size: 30px;
@@ -1486,4 +1486,89 @@ filter: brightness(30%);
   left: 1071px;
   top: 840px;
   padding-left: 40px;
+}
+
+.login_topic{
+  color: #f1f1f1;
+  
+}
+
+.container_register{
+  width: 450px;
+  margin: 30px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  border-radius: 29px;
+  color: #928427;
+  background-color: #fff;
+  justify-content: center;
+  margin-left: 37%;
+  margin-top: 70px;
+  
+  
+}
+
+.container_register p {
+  padding: 5px;
+}
+
+.register_bottom{
+
+height: 35px;
+width: 70%;
+border-color: rgba(146, 132, 39, 0.4);
+background: rgba(146, 132, 39, 0.4);
+border-radius: 3.91039px;
+color: #fff;
+font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  
+}
+
+.register_bottom:hover{
+
+  height: 35px;
+  width: 70%;
+  border-color: rgba(146, 132, 39, 0.4);
+  background: #928427;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  }
+
+.inputbox{
+  height: 35px;
+  width: 70%;
+  padding-left: 10px;
+  background: rgb(245, 245, 245);
+  border-radius: 3.91039px;
+  color: #262626;
+  margin: -5px;
+}
+
+.register_head{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 36px;
+  line-height: 42px;
+  color: #1A1718;
+}
+
+.account {
+
+
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 13.6864px;
+line-height: 18px;
+
+align-items: center;
+text-align: center;
+
+color: #262626;
 }
