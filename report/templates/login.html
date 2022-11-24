@@ -10,8 +10,8 @@
                         {% csrf_token %}
                         <div>
                             <p class='register_head' style="padding-top: 50px; padding-bottom: 20px;">Login</p>   
-                            <p><input class="inputbox" type='text' id='customer_name' name='eamil' placeholder="Email"/></p>
-                            <p><input class="inputbox" type='text' id='address' name='pwd' placeholder="Password"/></t>
+                            <p><input class="inputbox" type='text' id='email' name='email' placeholder="Email"/></p>
+                            <p><input class="inputbox" type='text' id='password' name='password' placeholder="Password"/></t>
                             <input class="register_bottom" type='submit' value='Login' style="margin-bottom: 10px; margin-top: 10px;">
                             <p class='account' style="padding-bottom:40px ;">Don't have an account?<a href="{% url 'regis' %}" style="padding-left:4px ;color: #928427;">Sign up</a></p>  
                         </div>

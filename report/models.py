@@ -58,3 +58,16 @@ class InvoiceLineItem(models.Model):
         unique_together = (("invoice_no", "product_code"),)
         managed = False
 
+class Account(models.Model):
+    customer_code = models.CharField(max_length=15,primary_key=True)
+    customer_name = models.CharField(max_length=20)
+    customer_lastname = models.CharField(max_length=20)
+    birthday = models.DateField(null=True ,blank = True)
+    address = models.CharField(max_length=200,null=True,blank= True)
+    email = models.CharField(max_length=30,null=True,blank= True)
+    phone_no = models.CharField(max_length=10,null=True,blank= True)
+    password = models.CharField(max_length=100,null=True,blank= True)
+    class Meta:
+        db_table = "account"
+        managed = False
+    

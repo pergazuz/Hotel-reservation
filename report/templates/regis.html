@@ -6,19 +6,17 @@
 
         <table id='CustomerList' class="container">
                 <div class="container_register">
-                    <form id='form_customer' action='/customer/save' method=POST>
+                    <form id='form_customer' action='/account/save' method=POST>
                         {% csrf_token %}
                         <div>
                             <p class='register_head' style="padding-top: 50px; padding-bottom: 20px;">Register</p>
-                            <p><input class="inputbox" type='text' id='customer_code' name='customer_code' placeholder="Fullname"/></p>
-                            
-                            <p><input class="inputbox" type='text' id='customer_name' name='name' placeholder="Email"/></p>
-                            
-                            <p><input class="inputbox" type='text' id='address' name='address' placeholder="Password"/></t>
-                            
-                            <p><input class="inputbox" type='text' id='credit_limit' name='credit_limit' placeholder="Credit limit"/></p>
-                           
-                            <p><input class="inputbox" type='text' id='country' name='country' placeholder="Address" /></p>
+                            <p><input class="inputbox" type='text' id='customer_code' name='customer_code' placeholder="Username"/></p>
+                            <p><input class="inputbox" type='text' id='customer_name' name='customer_name' placeholder="Firstname"/></p>
+                            <p><input class="inputbox" type='text' id='customer_lastname' name='customer_lastname' placeholder="Lastname"/></p>
+                            <p><input class="inputbox" type='text' id='email' name='email' placeholder="Email"/></p>
+                            <p><input class="inputbox" type='text' id='password' name='password' placeholder="Password"/></t>
+                            <p><input class="inputbox" type='text' id='address' name='address' placeholder="Address"/></p>
+                            <p><input class="inputbox" type='text' id='phone_no' name='phone_no' placeholder="Phone Number" /></p>
                             <input class="register_bottom" type='submit' value='Register' style="margin-bottom: 10px; margin-top: 20px;">
                             <p class='account' style="padding-bottom:40px ;">Already have an account?<a href="{% url 'login' %}" style="padding-left:4px ;color: #928427;">Sign in</a></p>
                         </div>

@@ -16,7 +16,7 @@ def index(request):
     return render(request, 'home.html')
 
 
-def customer(request):
+def account(request):
     customer_code = request.GET.get('customer_code', '')
     customers = list(Customer.objects.filter(customer_code=customer_code).values())
     data = dict()
@@ -49,9 +49,10 @@ class CustomerGet(View):
         return JsonResponse(data)        
 
 @method_decorator(csrf_exempt, name='dispatch')
-class CustomerSave(View):
+class AccountSave(View):
     def post(self, request):
-        form = CustomerForm(request.POST)
+        form = AccountForm(request.POST)
+        print(form)
         if form.is_valid():
             form.save()
         else:
@@ -59,36 +60,16 @@ class CustomerSave(View):
             ret['result'] = form.errors
             return JsonResponse(ret)
 
-        customers = list(Customer.objects.all().values())
+        accounts = list(Account.objects.all().values())
         data = dict()
-        data['customers'] = customers
+        data['accounts'] = accounts
         
         return render(request, 'login.html', data)
 
-class CustomerForm(forms.ModelForm):
+class AccountForm(forms.ModelForm):
     class Meta:
-        model = Customer
+        model = Account
         fields = '__all__'
-
-@method_decorator(csrf_exempt, name='dispatch')
-class CustomerSave2(View):
-    def post(self, request):
-
-        form = CustomerForm(request.POST)
-        if form.is_valid():
-            form.save()
-        else:
-            ret = dict()
-            ret['result'] = form.errors
-            ret['customers'] = list()
-            return JsonResponse(ret)
-
-        customers = list(Customer.objects.all().values())
-        data = dict()
-        data['customers'] = customers
-
-        return JsonResponse(data)
-        #return render(request, 'forms_customer.html', data)
 
 @method_decorator(csrf_exempt, name='dispatch')
 class CustomerDelete(View):
@@ -153,48 +134,39 @@ class login(View):
     template_name = 'login.html'
     
     def get(self, request):
-
-        if 'user' in request.session:
-            return redirect('home')
+        print(request)
+        if 'account' in request.session:
+            return redirect('home.html')
         else:
             return render(request, self.template_name)
     
     def post(self, request):
+        
         mail = request.POST['email']
-        pwd = request.POST['pwd']
+        pwd = request.POST['password']
         hash_pwd = md5(pwd.encode()).hexdigest()
-        user_exists = Customer.objects.filter(email=mail, password=hash_pwd)
-        print(mail)
+        user_exists = Account.objects.filter(email=mail, password=hash_pwd)
+    
         if user_exists.exists():
-            request.session['user'] = user_exists.first().fname
+            request.session['account'] = user_exists.first().customer_code
         else:
             messages.warning(request, 'Wrong credentials')
-
-        
         return render(request, 'home.html')
 
 
-@method_decorator(csrf_exempt, name='dispatch')
-class Customerlogin(View):
-    template_name = 'login.html'
-    def get(self, request):
-        if 'user' in request.session:
-            return redirect('home')
-        else:
-            return render(request, self.template_name)
-
-    def post(self, request):
-
-        form = CustomerForm(request.POST)
-        if form.is_valid():
-            form.save()
-        else:
-            ret = dict()
-            ret['result'] = form.errors
-            return JsonResponse(ret)
-
-        customers = list(Customer.objects.all().values())
-        data = dict()
-        data['customers'] = customers
+#@method_decorator(csrf_exempt, name='dispatch')
+#class Customerlogin(View):
+    #template_name = 'login.html'
+def user_login(request):
+    print(request)
+    form = CustomerForm(request.POST)
+    maillogin = request.POST['name']
+    pwd = request.POST['address']
+    hash_pwd = md5(pwd.encode()).hexdigest()
+    user_exists = Customer.objects.filter(name=maillogin, address=hash_pwd)
+    if user_exists.exists():
+        request.session['user'] = user_exists.first().name
+    else:
+        messages.warning(request, 'Wrong credentials')
         
-        return render(request, 'login.html', data)
+    return render(request, 'home.html')
