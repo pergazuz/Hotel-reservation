@@ -9,7 +9,7 @@ from django.db import connection
 from hashlib import md5
 from report.models import *
 from django.contrib import messages
-
+from django.contrib.auth import authenticate
 
 
 def index(request):
@@ -18,35 +18,35 @@ def index(request):
 
 def account(request):
     customer_code = request.GET.get('customer_code', '')
-    customers = list(Customer.objects.filter(customer_code=customer_code).values())
+    accounts = list(Account.objects.filter(customer_code=customer_code).values())
     data = dict()
-    data['customers'] = customers
+    data['accounts'] = accounts
     
     return render(request, 'login.html', data)
 
-class ProductList(View):
-    def get(self, request):
-        products = list(Product.objects.all().values())
-        data = dict()
-        data['products'] = products
+# class ProductList(View):
+#     def get(self, request):
+#         products = list(Product.objects.all().values())
+#         data = dict()
+#         data['products'] = products
 
-        return JsonResponse(data)
+#         return JsonResponse(data)
 
-class CustomerList(View):
-    def get(self, request):
-        customers = list(Customer.objects.all().values())
-        data = dict()
-        data['customers'] = customers
+# class CustomerList(View):
+#     def get(self, request):
+#         customers = list(Customer.objects.all().values())
+#         data = dict()
+#         data['customers'] = customers
 
-        return JsonResponse(data)
+#         return JsonResponse(data)
 
-class CustomerGet(View):
-    def get(self, request, customer_code):
-        customers = list(Customer.objects.filter(customer_code=customer_code).values())
-        data = dict()
-        data['customers'] = customers
+# class CustomerGet(View):
+#     def get(self, request, customer_code):
+#         customers = list(Customer.objects.filter(customer_code=customer_code).values())
+#         data = dict()
+#         data['customers'] = customers
 
-        return JsonResponse(data)        
+#         return JsonResponse(data)        
 
 @method_decorator(csrf_exempt, name='dispatch')
 class AccountSave(View):
@@ -71,25 +71,26 @@ class AccountForm(forms.ModelForm):
         model = Account
         fields = '__all__'
 
-@method_decorator(csrf_exempt, name='dispatch')
-class CustomerDelete(View):
-    def post(self, request):
 
-        customer_code = request.POST['customer_code']
-        customer = Customer.objects.get(customer_code=customer_code)
-        data = dict()
-        if customer:
-            customer.delete()
-            data['message'] = "Customer Deleted!"
-        else:
-            data['message'] = "Error!"
-            return JsonResponse(data)
+# @method_decorator(csrf_exempt, name='dispatch')
+# class CustomerDelete(View):
+#     def post(self, request):
 
-        customers = list(Customer.objects.all().values())
-        data['customers'] = customers
+#         customer_code = request.POST['customer_code']
+#         customer = Customer.objects.get(customer_code=customer_code)
+#         data = dict()
+#         if customer:
+#             customer.delete()
+#             data['message'] = "Customer Deleted!"
+#         else:
+#             data['message'] = "Error!"
+#             return JsonResponse(data)
 
-        return JsonResponse(data)
-        #return render(request, 'forms_customer.html', data)
+#         customers = list(Customer.objects.all().values())
+#         data['customers'] = customers
+
+#         return JsonResponse(data)
+#         #return render(request, 'forms_customer.html', data)
 
 def CursorToDict(data,columns):
     result = []
@@ -132,41 +133,22 @@ def regis(request):
 @method_decorator(csrf_exempt, name='dispatch')
 class login(View):
     template_name = 'login.html'
-    
     def get(self, request):
-        print(request)
-        if 'account' in request.session:
+        if 'user' in request.session:
             return redirect('home.html')
         else:
             return render(request, self.template_name)
-    
+
     def post(self, request):
-        
         mail = request.POST['email']
         pwd = request.POST['password']
         hash_pwd = md5(pwd.encode()).hexdigest()
         user_exists = Account.objects.filter(email=mail, password=hash_pwd)
-    
         if user_exists.exists():
-            request.session['account'] = user_exists.first().customer_code
+            request.session['user'] = user_exists.first().fname
         else:
             messages.warning(request, 'Wrong credentials')
-        return render(request, 'home.html')
+        return redirect('home.html')
 
 
-#@method_decorator(csrf_exempt, name='dispatch')
-#class Customerlogin(View):
-    #template_name = 'login.html'
-def user_login(request):
-    print(request)
-    form = CustomerForm(request.POST)
-    maillogin = request.POST['name']
-    pwd = request.POST['address']
-    hash_pwd = md5(pwd.encode()).hexdigest()
-    user_exists = Customer.objects.filter(name=maillogin, address=hash_pwd)
-    if user_exists.exists():
-        request.session['user'] = user_exists.first().name
-    else:
-        messages.warning(request, 'Wrong credentials')
-        
-    return render(request, 'home.html')
+

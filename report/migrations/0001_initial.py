@@ -124,4 +124,17 @@ class Migration(migrations.Migration):
                 'managed': False,
             },
         ),
+        # migrations.CreateModel(
+        #     name='Promotion',
+        #     fields=[
+        #         ('event', models.CharField(db_column='event', on_delete=django.db.models.deletion.CASCADE, primary_key=True, serialize=False, to='report.promotion')),
+        #         ('discount', models.IntegerField(null=True)),
+        #         ('vat', models.IntegerField(null=True)),
+        #         ('amount_due', models.IntegerField(null=True)),
+        #     ],
+        #     options={
+        #         'db_table': 'promotion',
+        #         'managed': False,
+        #     },
+        # ),
     ]

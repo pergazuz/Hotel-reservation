@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Report Invoice</title>
+    <title>Hotel</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src='/static/cpe.js'></script>
@@ -22,10 +22,8 @@
                     <div class="navmid">
                         <li><a class="nav" href="{% url 'contact' %}">CONTACT</a></li>
                         <li><a class="nav" href="{% url 'about' %}">ABOUT US</a></li>
-                        {% if request.session.account %}
-                        <li>
-                            <a class="nav" href="{% url 'login' %}">Logout</a>
-                        </li>
+                        {% if user.is_authenticated %}
+                            <li><a href="/logout">Log out</a></li>
                         {% endif %}
                         <li><a class="log"  href="{% url 'login' %}"><button class="btn login">Login</button></a></li>
                         <li><a class="nav"  href="{% url 'gallery' %}">GALLERY</a></li>

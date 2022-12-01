@@ -30,7 +30,7 @@ urlpatterns = [
     path('roomtype3', views.roomtype3, name='roomtype3'),
     path('regis', views.regis, name='regis'),
     path('login', views.login.as_view(), name='login'),
-    #path('login', views.user_login, name='login'),
+    #path('login', views.login, name='login'),
 
     #path('ReportListAllInvoices', views.ReportListAllInvoices),
     #path('ReportProductsSold',views.ReportProductsSold),

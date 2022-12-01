@@ -5,58 +5,7 @@ class Data(models.Model):
     key = models.CharField(max_length=10,primary_key=True)
     value = models.CharField(max_length=100)
 
-class ProductType(models.Model):
-    product_type = models.CharField(max_length=10,primary_key=True)
-    description = models.CharField(max_length=100)
-    class Meta:
-        db_table = "product_type"
-        managed = False
-    def __str__(self):
-        return self.product_type
 
-class Product(models.Model):
-    code = models.CharField(max_length=10,primary_key=True)
-    name = models.CharField(max_length=100)
-    units = models.CharField(max_length=10)
-    product_type = models.ForeignKey(ProductType, on_delete=models.CASCADE, db_column='product_type')
-    class Meta:
-        db_table = "product"
-        managed = False
-    def __str__(self):
-        return self.code
-
-class Customer(models.Model):
-    customer_code = models.CharField(max_length=10, primary_key=True)
-    name = models.CharField(max_length=100, null=True)
-    address = models.CharField(max_length=100, null=True, blank=True)
-    credit_limit = models.FloatField(null=True, blank=True)
-    country = models.CharField(max_length=20, null=True, blank=True)
-    class Meta:
-        db_table = "customer"
-        managed = False
-
-class Invoice(models.Model):
-    invoice_no = models.CharField(max_length=10, primary_key=True)
-    date = models.DateField(null=True)
-    customer_code = models.ForeignKey(Customer, on_delete=models.CASCADE, related_name='customer', db_column='customer_code')
-    due_date = models.DateField(null=True, blank=True)
-    total = models.FloatField(null=True, blank=True)
-    vat = models.FloatField(null=True, blank=True)
-    amount_due = models.FloatField(null=True, blank=True)
-    class Meta:
-        db_table = "invoice"
-        managed = False
-
-class InvoiceLineItem(models.Model):
-    invoice_no = models.ForeignKey(Invoice, primary_key=True, on_delete=models.CASCADE, db_column='invoice_no')
-    product_code = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='product', db_column='product_code')
-    quantity = models.IntegerField(null=True)
-    unit_price = models.FloatField(null=True)
-    extended_price = models.FloatField(null=True)
-    class Meta:
-        db_table = "invoice_line_item"
-        unique_together = (("invoice_no", "product_code"),)
-        managed = False
 
 class Account(models.Model):
     customer_code = models.CharField(max_length=15,primary_key=True)
@@ -70,4 +19,75 @@ class Account(models.Model):
     class Meta:
         db_table = "account"
         managed = False
+    def __str__(self):
+        return self.customer_code
     
+class Promotion(models.Model):
+    event = models.CharField(max_length=40,primary_key=True)
+    discount = models.IntegerField(null=True)
+    vat = models.IntegerField(null=True)
+    amount_due = models.IntegerField(null=True)
+    class Meta:
+        db_table = "promotion"
+        managed = False
+    def __str__(self):
+        return self.event
+
+class Receipt(models.Model):
+    receipt_no = models.CharField(max_length=10, primary_key=True)
+    date = models.DateField(null=True)
+    customer_code = models.ForeignKey(Account, on_delete=models.CASCADE, db_column='customer_code')
+    payment_method = models.CharField(max_length=10, null=True, blank=True)
+    payment_reference = models.CharField(max_length=10, null=True, blank=True)
+    amount_due = models.IntegerField(null=True)
+    class Meta:
+        db_table = "receipt"
+        managed = False
+        
+class Reserve(models.Model):
+    reserve_no = models.CharField(max_length=10, primary_key=True)
+    customer_code = models.ForeignKey(Account, on_delete=models.CASCADE, related_name='account', db_column='customer_code')
+    room_no = models.CharField(max_length=10,null=True,blank= True)
+    reserve_date = models.DateField(null=True)
+    payment_method = models.CharField(max_length=10,null=True,blank= True)
+    event = models.ForeignKey(Promotion, on_delete=models.CASCADE, related_name='promotion', db_column='event')
+    receipt_no = models.ForeignKey(Receipt, on_delete=models.CASCADE, related_name='receipt', db_column='receipt_no')
+    class Meta:
+        db_table = "reserve"
+        managed = False
+
+
+class Room(models.Model):
+    room_no = models.CharField(max_length=10, primary_key=True)
+    room_type = models.CharField(max_length=20, null=True, blank=True)
+    detail = models.CharField(max_length=20, null=True, blank=True)
+    class Meta:
+        db_table = "room"
+        managed = False
+
+# class ReserveLineItem(models.Model):
+#     reserve_no = models.ForeignKey(Reserve, primary_key=True, on_delete=models.CASCADE, db_column='reserve_no')
+#     reserve_item_no = models.IntegerField()
+#     room_no = models.ForeignKey(Room, on_delete=models.CASCADE, related_name='room', db_column='room_no')
+#     check_out_date = models.DateField(null=True ,blank = True)
+#     check_in_date = models.DateField(null=True ,blank = True)
+#     class Meta:
+#         db_table = "reserve_line_item"
+#         unique_together = (("reserve_no", "reserve_item_no"),)
+#         managed = False
+#     def __str__(self):
+#         return '{"reserve_line_item":"%s","reserve_item_no":"%s","room_no":"%s","check_out_date":"%s","check_in_date":"%s"}' % (self.reserve_line_item, self.reserve_item_no, self.room_no, self.check_out_date, self.check_in_date)
+        
+class ReceiptLineItem(models.Model):
+    receipt_no = models.ForeignKey(Receipt, primary_key=True, on_delete=models.CASCADE, db_column='receipt_no')
+    item_receipt_no = models.IntegerField()
+    room_no = models.ForeignKey(Room, on_delete=models.CASCADE, related_name='room', db_column='room_no')
+    reserve_no = models.ForeignKey(Reserve, on_delete=models.CASCADE, related_name='reserve', db_column='reserve_no')
+    payment_method = models.CharField(max_length=20)
+    class Meta:
+        db_table = "receipt_line_item"
+        unique_together = (("receipt_no", "item_receipt_no"),)
+        managed = False
+    def __str__(self):
+        return '{"receipt_no":"%s","item_receipt_no":"%s","room_no":"%s","reserve_no":"%s","payment_method":"%s"}' % (self.receipt_no, self.item_receipt_no, self.room_no, self.reserve_no, self.payment_method)
+
