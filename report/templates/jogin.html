@@ -1,0 +1,84 @@
+<html>
+<head>
+    <title>Hotel</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src='/static/cpe.js'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='/static/cpe.css'>
+    <script src="https://kit.fontawesome.com/f56c0503d6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+        <div class="container">
+                <h1 class="logo"><a href="/"><img src="static/pic/logo.png" width="100" height="100" ></a></h1>
+                <ul>
+                    <div class="navmid">
+                        <li><a class="nav"  href="{% url 'room' %}">RESERVE HISTORY</a></li>
+                        <li><a class="nav" href="{% url 'contact' %}">CONTACT</a></li>
+                        <li><a class="nav" href="{% url 'about' %}">ABOUT US</a></li>
+                        <li><a class="log"  href="{% url 'login' %}"><button class="btn login">Log out</button></a></li><a href="{% url 'home' %}"></a>
+                        <li><a class="nav"  href="{% url 'gallery' %}">GALLERY</a></li>
+                        <li><a class="nav"  href="{% url 'room' %}">ROOMS</a></li>
+                    </div>
+                </ul>
+              </div>
+            </nav>  
+    {% block content %}
+    <div class="row">
+        <div class="column1">
+            <br><h2 class="find">Find the</h2></br>
+            <br><h2 class="find"></h2></br>
+            <br><h2 class="find">best hotel</h2></br>
+            <br><h2 class="find"></h2></br>
+            <br><h2 class="find">deals</h2></br>
+            <p class="room1_main"><img src="static/pic/room_1.jpg" width="550" height="400"></p>
+        
+        </div>
+        <div class="column2">
+            <h2 class="stars">5 STARS HOTEL</h2>
+            <br><p class="des_main">The Hotel’s design, decor, and furnishings feature a luxury theme in delicate and subtle tones and materials, enticing all who stay to relax, rejuvenate and recharge in sublime comfort whilst enjoying Cliveden Hotel’s unrivaled center location and discreet charm.</p></br>
+            <button class="btn bookroom">Book a room</button>
+            
+            <div class="container_main">
+                <p class="room2_main"><img src="static/pic/room_2.jpg" width="600" height="450" ></p>
+            </div>
+        
+        </div>
+    </div>
+    <div id="showcase">
+    <div class="container">
+    <div class="showcase-content">
+        <i class="fa-solid fa-angles-down fa-3x"></i>
+        <h1 class="select" style="padding-top:40px">Entire room of choice</h1>
+    </div>
+    </div>
+    </div>   
+
+    <div class="flex-container">
+        <div class="flex-container2">         
+            <div><img src="static/pic/room_6.jpg" width="400" height="175" style="border-radius: 15px 15px 0px 0px;"><a href="{% url 'roomtype' %}">
+                <p class="room_price">$200.00</p>
+                <p class="room">Booking ID: 683342234</p>
+                <p class="room_type">Standard room</p>
+            </a></div>
+    <div><img src="static/pic/room_4.jpg" width="400" height="175" style="border-radius: 15px 15px 0px 0px;"><a href="{% url 'roomtype2' %}">
+        <p class="room_price">$450.00</p>
+        <p class="room">Booking ID:7342234235</p>
+        <p class="room_type">Superior room</p>
+    </a></div>
+    <div><img src="static/pic/room_5.jpg" width="400" height="175" style="border-radius: 15px 15px 0px 0px;"><a href="{% url 'roomtype3' %}">
+        <p class="room_price">$700.00</p>
+        <p class="room">Booking ID: 663342234</p>
+        <!-- <i class="fa-solid fa-cart-shopping"></i> -->
+        <p class="room_type">Suite room</p>
+    </a></div>  
+    </div>
+    {% endblock %}
+</body>
+</html>
+

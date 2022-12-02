@@ -74,7 +74,7 @@ WSGI_APPLICATION = 'lab4.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {'default': {'ENGINE': 'django.db.backends.postgresql_psycopg2','NAME': 'Project','USER': 'postgres','PASSWORD': 'tongfah22645','HOST': 'localhost','PORT': '',}}
+DATABASES = {'default': {'ENGINE': 'django.db.backends.postgresql_psycopg2','NAME': 'project','USER': 'postgres','PASSWORD': 'Mandojin.03','HOST': 'localhost','PORT': '',}}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators

@@ -69,9 +69,9 @@ position: absolute;
 width: 1073px;
 height: 197px;
 left: 209px;
-top: 604px;
+top: 600px;
 
-background: #D9D9D9;
+background: #1A1718;
 }
 .container1_1_5{
   border-radius: 22px;
@@ -727,21 +727,17 @@ border: #928427;
 
 
 position: absolute;
-width: 477px;
-height: 268px;
 left: 208px;
 top: 289px;
 
-background: url('./pic/roomtype1.jpg'); 
+background: url('./pic/S_roomtype.jpg'); 
 }
 .roomtype1_1_main{
   /* image 40 */
 
 
 position: absolute;
-width: 210px;
-height: 184px;
-left: 214px;
+left: 204px;
 top: 605px;
 
 background: url('./pic/roomtype1_1.jpg');
@@ -770,7 +766,7 @@ position: absolute;
 width: 139px;
 height: 185px;
 left: 736px;
-top: 602px;
+top: 605px;
 
 background: url('./pic/roomtype1_3.jpg');
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -831,15 +827,12 @@ background: url('./pic/roomtype2.jpg');
 }
 .roomtype2_1_main{
   /* image 40 */
-
-
 position: absolute;
 width: 210px;
 height: 184px;
 left: 214px;
 top: 645px;
-
-background: url('./pic/roomtype2_1.jpg');
+background: url('./pic/S_roomtype2.jpg'); 
 border-radius: 22px;
 }
 
@@ -931,10 +924,10 @@ background: url('./pic/roomtype3.jpg');
 position: absolute;
 width: 210px;
 height: 184px;
-left: 214px;
+left: 204px;
 top: 685px;
 
-background: url('./pic/roomtype3_1.jpg');
+background: url('./pic/S_roomtype2.jpg');
 border-radius: 22px;
 }
 
@@ -1576,3 +1569,476 @@ color: #262626;
 body{
   color: #fff;
 }
+.room_up1{
+  position: absolute;
+  width: 167px;
+  height: 109px;
+  left: 152px;
+  top: 188px;
+}
+
+.room_up2{
+  position: absolute;
+  width: 149px;
+  height: 114px;
+  left: 780px;
+  top: 187px;
+}
+
+.room_up3{
+  position: absolute;
+  width: 213px;
+  height: 112px;
+  left: calc(43% - 200px/2 - 401.5px);
+  top: 580px;
+}
+
+.room_up4{
+  position: absolute;
+  width: 114px;
+  height: 113px;
+  left: 782px;
+  top: 574px;
+} 
+
+
+
+.container20_1_1{
+  /* Rectangle 22 */
+  position: absolute;
+  width: 230px;
+  height: 33px;
+  left: 350px;
+  top: 134px;
+
+  background: #D9D9D9;
+  border-radius: 35px;
+}
+.stantdard{
+  /* Cliveden-Standard room */
+  position: absolute;
+  width: 199px;
+  height: 23px;
+  left: 375px;
+  top: 140px;
+
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: #928427;
+}
+
+.container20_1_2{
+  /* Rectangle 37 */
+  position: absolute;
+  width: 230px;
+  height: 33px;
+  left: 965px;
+  top: 132px;
+
+  background: #D9D9D9;
+  border-radius: 35px;
+}
+
+.superior{
+  /* Cliveden-Superior room */
+  position: absolute;
+  width: 198px;
+  height: 23px;
+  left: 993px;
+  top: 137px;
+
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: #928427;
+}
+
+.container20_1_3{
+  /* Rectangle 36 */
+  position: absolute;
+  width: 230px;
+  height: 33px;
+  left: 350px;
+  top: 525px;
+
+  background: #D9D9D9;
+  border-radius: 35px;
+}
+
+.deluxe{
+  /* Cliveden-Deluxe room */
+  position: absolute;
+  width: 183px;
+  height: 23px;
+  left: 385px;
+  top: 532px;
+
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: #928427;
+}
+
+.container20_1_4{
+  /* Rectangle 38 */
+  position: absolute;
+  width: 230px;
+  height: 33px;
+  left: 965px;
+  top: 525px;
+
+  background: #D9D9D9;
+  border-radius: 35px;
+}
+
+.suite{
+  /* Cliveden-Deluxe room */
+  position: absolute;
+  width: 183px;
+  height: 23px;
+  left: 1003px;
+  top: 532px;
+
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: #928427;
+}
+
+.container20_2_1{
+  /* Facilities */
+  position: absolute;
+  width: 195px;
+  height: 62px;
+  left: 647px;
+  top: 870px;
+
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 62px;
+
+  color: #FFFFFF;
+}
+
+.swim_pool{
+  position: absolute;
+  width: 224px;
+  height: 145px;
+  left: 162px;
+  top: 1100px;
+}
+
+.container20_2_2{
+  /* Rectangle 34 */
+  position: absolute;
+  width: 149px;
+  height: 29px;
+  left: 240px;
+  top: 1050px;
+
+  background: #D9D9D9;
+  border-radius: 35px;
+}
+
+.swimming{
+  /* Swimming pool */
+  position: absolute;
+  width: 113px;
+  height: 21px;
+  left: 262px;
+  top: 1054px;
+
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: #000000;
+}
+
+.fitness{
+  position: absolute;
+  width: 195px;
+  height: 145px;
+  left: 480px;
+  top: 1100px;
+}
+
+.container20_2_3{
+  /* Rectangle 35 */
+  position: absolute;
+  width: 149px;
+  height: 29px;
+  left: 550px;
+  top: 1050px;
+
+  background: #D9D9D9;
+  border-radius: 35px;
+}
+
+.fitness1{
+  position: absolute;
+  width: 51px;
+  height: 21px;
+  left: 602px;
+  top: 1054px;
+
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: #000000;
+}
+
+.restau{
+  position: absolute;
+  width: 250px;
+  height: 373px;
+  left: 790px;
+  top: 1100px;
+}
+
+.container20_2_4{
+  /* Rectangle 30 */
+  position: absolute;
+  width: 149px;
+  height: 29px;
+  left: 1008px;
+  top: 1050px;
+
+  background: #D9D9D9;
+  border-radius: 35px;
+}
+
+.restaurant{
+  position: absolute;
+  width: 78px;
+  height: 21px;
+  left: 1050px;
+  top: 1054px;
+
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: #000000;
+}
+
+.kids_club{
+  position: absolute;
+  width: 224px;
+  height: 148px;
+  left: 162px;
+  top: 1336px;
+}
+
+.container20_2_5{
+  /* Rectangle 32 */
+  position: absolute;
+  width: 149px;
+  height: 29px;
+  left: 240px;
+  top: 1280px;
+
+  background: #D9D9D9;
+  border-radius: 35px;
+}
+
+.kid{
+  position: absolute;
+  width: 68px;
+  height: 21px;
+  left: 285px;
+  top: 1285px;
+
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: #000000;
+}
+
+.lob{
+  position: absolute;
+  width: 195px;
+  height: 149px;
+  left: 480px;
+  top: 1336px;
+}
+
+.container20_2_6{
+  /* Rectangle 33 */
+  position: absolute;
+  width: 149px;
+  height: 29px;
+  left: 550px;
+  top: 1280px;
+
+  background: #D9D9D9;
+  border-radius: 35px;
+}
+
+.lobby{
+  position: absolute;
+  width: 45px;
+  height: 21px;
+  left: 605px;
+  top: 1285px;
+
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: #000000;
+}
+.container4{
+  position: absolute;
+  width: 505px;
+  height: 549px;
+  left: calc(45.5% - 505px/2 - 301.5px);
+  top: calc(65% - 549px/2 + 46.5px);
+}
+
+.container5{
+  position: absolute;
+  width: 578px;
+  height: 326px;
+  left: 520px;
+  top: 1px;
+}
+
+.container6{
+  position: absolute;
+  width: 600px;
+  height: 30px;
+  left: 13%;
+  top: 540px;
+  
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  
+  color: #FFFFFF;
+}
+
+.container7{
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 5px;
+  padding-left: 150px;
+
+}
+
+.container8{
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 5px;
+ 
+
+}
+
+.container9{
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 5px;
+  padding-left: 0.5px;
+
+
+}
+
+.container10{
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 5px;
+  padding-left: -30px;
+
+}
+
+.container11{
+  position: absolute;
+  width: 505px;
+  height: 700px;
+  left: calc(10% - 505px/2 - 301.5px);
+  top: calc(720% - 549px/2 + 46.5px);
+  
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+  text-align: center;
+}
+
+
+
+.container13{
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+
+  text-align: center;
+}
+
+.box3 {
+  color: rgb(250, 250, 250);
+  line-height: 0.5;
+  padding-right: 15px;
+  margin-bottom: -80px;
+}
+
+.box2 {
+  color: rgb(174, 151, 38);
+}
+
+
+.container12{
+  padding-right: 50%;
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  right:50%
+}
+
+/* .container20{
+  width: 50%;
+  height: auto;
+} */

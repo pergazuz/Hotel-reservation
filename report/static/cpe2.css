@@ -113,7 +113,7 @@ p{
 #navbar ul{
   list-style:none;
   position: relative;
-  float:none;
+  float:none; 
 }
 
 #navbar ul li {

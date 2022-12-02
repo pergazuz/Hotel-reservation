@@ -10,8 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='/static/cpe.css'>
     <script src="https://kit.fontawesome.com/f56c0503d6.js" crossorigin="anonymous"></script>
-    
-
 </head>
 <body>
     <header>
@@ -22,9 +20,9 @@
                     <div class="navmid">
                         <li><a class="nav" href="{% url 'contact' %}">CONTACT</a></li>
                         <li><a class="nav" href="{% url 'about' %}">ABOUT US</a></li>
-                      
-                        <!-- <li><a href="/logout">Log out</a></li> -->
-                       
+                        {% if user.is_authenticated %}
+                            <li><a href="/logout">Log out</a></li>
+                        {% endif %}
                         <li><a class="log"  href="{% url 'login' %}"><button class="btn login">Login</button></a></li>
                         <li><a class="nav"  href="{% url 'gallery' %}">GALLERY</a></li>
                         <li><a class="nav"  href="{% url 'room' %}">ROOMS</a></li>

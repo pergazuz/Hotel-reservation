@@ -10,7 +10,7 @@ from hashlib import md5
 from report.models import *
 from django.contrib import messages
 from django.contrib.auth import authenticate
-
+from django.db import models
 
 def index(request):
     return render(request, 'home.html')
@@ -92,15 +92,6 @@ class AccountForm(forms.ModelForm):
 #         return JsonResponse(data)
 #         #return render(request, 'forms_customer.html', data)
 
-def CursorToDict(data,columns):
-    result = []
-    fieldnames = [name.replace(" ", "_").lower() for name in columns]
-    for row in data:
-        rowset = []
-        for field in zip(fieldnames, row):
-            rowset.append(field)
-        result.append(dict(rowset))
-    return result
 
 
 
@@ -129,74 +120,45 @@ def roomtype3(request):
 def regis(request):
     return render(request, 'regis.html')
 
+def home(request):
+    return render(request, 'home.html')
+def jogin(request):
+    return render(request,'jogin.html')
 
-
-class login(View):
+#@method_decorator(csrf_exempt, name='dispatch')
+#class login(View):
     template_name = 'login.html'
     def get(self, request):
-        if 'account' in request.session:
+        if 'user' in request.session:
             return redirect('home')
         else:
             return render(request, self.template_name)
-    
+
     def post(self, request):
-        email = request.POST['email']
+        mail = request.POST['email']
         pwd = request.POST['password']
         hash_pwd = md5(pwd.encode()).hexdigest()
-        user_exists = Account.objects.filter(email=email, password=hash_pwd)
+        user_exists = Account.objects.filter(email=mail, password=hash_pwd)
         if user_exists.exists():
-            request.session['account'] = user_exists.first().customer_code
+            request.session['user'] = user_exists.email
         else:
             messages.warning(request, 'Wrong credentials')
-        return redirect('home')
+            return redirect('regis')
+def login(request):
+    if request.method =='POST':
+        email1=request.POST['email']
+        password1=request.POST['password']
+        x = authenticate(email=email1,password=password1)
+        #print(x)
+        #print(email)
+        #print(password)
+        try:
+            if Account.objects.all().get(email=email1,password=password1):         
+                messages.success(request,"เข้าสู่ระบบสำเร็จ")
+                return redirect('jogin')
+        except:
+            pass
+    response = render(request,'login.html')
+    return HttpResponse(response)
 
 
-def home(request):
-    return render(request, 'home.html')
-
-
-def buy_1(request):
-
-    cursor = connection.cursor()
-    cursor.execute ('SELECT r.room_no '
-                    ' FROM room r ' 
-                    ' ')
-    dataReport = dict()
-    columns = [col[0] for col in cursor.description]
-    data = cursor.fetchall()
-    dataReport['column_name'] = columns
-    dataReport['data'] = CursorToDict(data,columns)
-    
-
-    
-    return render(request, 'buy_1.html', dataReport)
-
-
-
-@method_decorator(csrf_exempt, name='dispatch')
-class ReserveSave(View):
-    def post(self, request):
-        form = ReserveForm(request.POST)
-     
-        if form.is_valid():
-            form.save()
-        else:
-            ret = dict()
-            ret['result'] = form.errors
-            return JsonResponse(ret)
-
-        reserves = list(Reserve.objects.all().values())
-        data = dict()
-        data['reserves'] = reserves
-        
-        return render(request, 'buy_1.html', data)
-
-
-class ReserveForm(forms.ModelForm):
-    class Meta:
-        model = Reserve
-        fields = '__all__'
-
-
-def buy_2(request):
-    return render(request, 'buy_2.html')
