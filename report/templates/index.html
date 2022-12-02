@@ -22,9 +22,9 @@
                     <div class="navmid">
                         <li><a class="nav" href="{% url 'contact' %}">CONTACT</a></li>
                         <li><a class="nav" href="{% url 'about' %}">ABOUT US</a></li>
-                        {% if user.is_authenticated %}
-                            <li><a href="/logout">Log out</a></li>
-                        {% endif %}
+                      
+                        <!-- <li><a href="/logout">Log out</a></li> -->
+                       
                         <li><a class="log"  href="{% url 'login' %}"><button class="btn login">Login</button></a></li>
                         <li><a class="nav"  href="{% url 'gallery' %}">GALLERY</a></li>
                         <li><a class="nav"  href="{% url 'room' %}">ROOMS</a></li>

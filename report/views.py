@@ -130,25 +130,73 @@ def regis(request):
     return render(request, 'regis.html')
 
 
-@method_decorator(csrf_exempt, name='dispatch')
+
 class login(View):
     template_name = 'login.html'
     def get(self, request):
-        if 'user' in request.session:
-            return redirect('home.html')
+        if 'account' in request.session:
+            return redirect('home')
         else:
             return render(request, self.template_name)
-
+    
     def post(self, request):
-        mail = request.POST['email']
+        email = request.POST['email']
         pwd = request.POST['password']
         hash_pwd = md5(pwd.encode()).hexdigest()
-        user_exists = Account.objects.filter(email=mail, password=hash_pwd)
+        user_exists = Account.objects.filter(email=email, password=hash_pwd)
         if user_exists.exists():
-            request.session['user'] = user_exists.first().fname
+            request.session['account'] = user_exists.first().customer_code
         else:
             messages.warning(request, 'Wrong credentials')
-        return redirect('home.html')
+        return redirect('home')
+
+
+def home(request):
+    return render(request, 'home.html')
+
+
+def buy_1(request):
+
+    cursor = connection.cursor()
+    cursor.execute ('SELECT r.room_no '
+                    ' FROM room r ' 
+                    ' ')
+    dataReport = dict()
+    columns = [col[0] for col in cursor.description]
+    data = cursor.fetchall()
+    dataReport['column_name'] = columns
+    dataReport['data'] = CursorToDict(data,columns)
+    
+
+    
+    return render(request, 'buy_1.html', dataReport)
 
 
 
+@method_decorator(csrf_exempt, name='dispatch')
+class ReserveSave(View):
+    def post(self, request):
+        form = ReserveForm(request.POST)
+     
+        if form.is_valid():
+            form.save()
+        else:
+            ret = dict()
+            ret['result'] = form.errors
+            return JsonResponse(ret)
+
+        reserves = list(Reserve.objects.all().values())
+        data = dict()
+        data['reserves'] = reserves
+        
+        return render(request, 'buy_1.html', data)
+
+
+class ReserveForm(forms.ModelForm):
+    class Meta:
+        model = Reserve
+        fields = '__all__'
+
+
+def buy_2(request):
+    return render(request, 'buy_2.html')

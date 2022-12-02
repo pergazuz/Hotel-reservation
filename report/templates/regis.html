@@ -14,7 +14,7 @@
                             <p><input class="inputbox" type='text' id='customer_name' name='customer_name' placeholder="Firstname"/></p>
                             <p><input class="inputbox" type='text' id='customer_lastname' name='customer_lastname' placeholder="Lastname"/></p>
                             <p><input class="inputbox" type='text' id='email' name='email' placeholder="Email"/></p>
-                            <p><input class="inputbox" type='text' id='password' name='password' placeholder="Password"/></t>
+                            <p><input class="inputbox" type='password' id='password' name='password' placeholder="Password"/></t>
                             <p><input class="inputbox" type='text' id='address' name='address' placeholder="Address"/></p>
                             <p><input class="inputbox" type='text' id='phone_no' name='phone_no' placeholder="Phone Number" /></p>
                             <input class="register_bottom" type='submit' value='Register' style="margin-bottom: 10px; margin-top: 20px;">
@@ -31,6 +31,9 @@
 
 
 <script>
+    function myFunction() {
+      document.getElementById("password").placeholder = "Type your password";
+    }
     $(document).ready( function () {
         
 

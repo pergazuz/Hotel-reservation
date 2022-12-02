@@ -45,13 +45,15 @@ class Receipt(models.Model):
         managed = False
         
 class Reserve(models.Model):
-    reserve_no = models.CharField(max_length=10, primary_key=True)
+    reserve_no = models.CharField(max_length=20, primary_key=True)
     customer_code = models.ForeignKey(Account, on_delete=models.CASCADE, related_name='account', db_column='customer_code')
-    room_no = models.CharField(max_length=10,null=True,blank= True)
-    reserve_date = models.DateField(null=True)
-    payment_method = models.CharField(max_length=10,null=True,blank= True)
-    event = models.ForeignKey(Promotion, on_delete=models.CASCADE, related_name='promotion', db_column='event')
+    room_no = models.CharField(max_length=20,null=True,blank= True)
+    payment_method = models.CharField(max_length=20,null=True,blank= True)
+    event = models.ForeignKey(Promotion, on_delete=models.CASCADE, related_name='promotion', db_column='event', null=True)
     receipt_no = models.ForeignKey(Receipt, on_delete=models.CASCADE, related_name='receipt', db_column='receipt_no')
+    check_out_date = models.DateField(null=True ,blank = True)
+    check_in_date = models.DateField(null=True ,blank = True)
+
     class Meta:
         db_table = "reserve"
         managed = False

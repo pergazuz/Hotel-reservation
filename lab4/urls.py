@@ -31,7 +31,12 @@ urlpatterns = [
     path('regis', views.regis, name='regis'),
     path('login', views.login.as_view(), name='login'),
     #path('login', views.login, name='login'),
-
+    path('buy_1', views.buy_1, name='buy_1'),
+    path('buy_2', views.buy_2, name='buy_2'),
+    path('home', views.home, name='home'),
+    # path('room/get', views.Room), 
+    # path('room/get/<room_no>', views.RoomGet.as_view(), name='room_get'), 
+    # path('RoomNO', views.RoomNO, name='RoomNo'),
     #path('ReportListAllInvoices', views.ReportListAllInvoices),
     #path('ReportProductsSold',views.ReportProductsSold),
     #path('ReportListAllProducts',views.ReportListAllProducts),
@@ -42,7 +47,8 @@ urlpatterns = [
     #path('customer/list', views.CustomerList.as_view(), name='customer_list'), 
     #path('customer/get', views.customer), 
     #path('customer/get/<customer_code>', views.CustomerGet.as_view(), name='customer_get'), 
-    path('account/save', views.AccountSave.as_view(), name='account_save'),   
+    path('account/save', views.AccountSave.as_view(), name='account_save'),
+    path('reserve/save', views.ReserveSave.as_view(), name='reserve_save'),      
     #path('customer/save2', views.CustomerSave2.as_view(), name='customer_save2'), 
     #path('customer/delete', views.CustomerDelete.as_view(), name='customer_delete'), 
     

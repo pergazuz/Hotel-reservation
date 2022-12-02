@@ -1,0 +1,94 @@
+{% extends 'index.html' %}
+
+
+{% block content %}
+
+
+        <table id='CustomerList' class="container">
+                <div class="container_register">
+                    <form id='form_customer' action='/reserve/save' method=POST>
+                        {% csrf_token %}
+                        <div>
+                            <p class='register_head' style="padding-top: 50px; padding-bottom: 20px;">Detail for payment</p>
+                            <p><select class="inputbox" name="room" id="room" >
+                                <option value="" disabled selected>Select your room type</option>
+                                <option value="standard_room">Standard room</option>
+                                <option value="standard_room">Superior room</option>
+                                <option value="deluxe_room">Deluxe room</option>
+                                <option value="suite_room">Suite room</option>
+                            </p>
+                            <select class="inputbox" name="room" id="room" ></select>
+                         
+                            <p><select class="inputbox" name="room_no" id="room_no" style="margin-bottom: 17px;">
+                                <option value="" disabled selected>Select your room number</option>
+                                {% for lineitem in data %}
+                                <option value="standard_room">{{ lineitem.room_no }}</option>
+                            </p>
+                            {% endfor %}
+                            <p><input class="inputbox" type='text' id='customer_code' name='customer_code' placeholder="Username"/></p>
+                            <p><input class="inputbox" type='text' id='person' name='person' placeholder="Person"/></p>
+                          
+                         
+                            
+                            <p><input class="inputbox" placeholder="Check In Date" type="text" onfocus="(this.type = 'date')" id="check_in_date" name="check_in_date"></p>
+                            <i class="fa-solid fa-angles-down"></i>
+                            <p><input class="inputbox" placeholder="Check Out Date" type="text" onfocus="(this.type = 'date')" id="check_out_date" name="check_out_date"></p>
+                            <p><select class="inputbox" name="payment_method" id="payment_method" >
+                                <option value="" disabled selected>Select your payment method</option>
+                                <option value="credit_cards">Credit cards</option>
+                                <option value="mobile_payments">Mobile payments</option>
+                                <option value="debit_cards">Debit cards</option>
+                            </p>
+                            <input class="register_bottom" type='submit' value='Confirm' style="margin-bottom: 50px; margin-top: 30px;">
+                            <a class="nav" href="{% url 'buy_2' %}">CONTACT</a>
+                            
+                        </div>
+                    </form>   
+                </div> 
+                </tr>
+            </tfoot>
+        </table>
+{% endblock %}
+
+{% block script %}
+
+
+<script>
+    
+    $(document).ready( function () {
+        
+
+        $('#btnAddCustomer').click(function() {
+            console.log('btnAddCustomer');
+            var token = $('[name=csrfmiddlewaretoken]').val();
+            $.ajax({
+                url:  '/customer/save2',
+                type:  'post',
+                data: $('#form_customer').serialize(),
+                headers: { "X-CSRFToken": token },
+                dataType:  'json',
+                success: function  (data) {
+                    let rows =  '';
+                    var i = 1;
+                    data.customers.forEach(customer => {
+                        rows += `
+                        <tr>
+                            <td>${i++}</td>
+                            <td>${customer.customer_code}</td>
+                            <td>${customer.name}</td>
+                            <td>${customer.address}</td>
+                            <td>${customer.credit_limit}</td>
+                            <td>${customer.country}</td>
+                            <td><input type='button' class='btnDelCustomer' value='Del'></td>
+                        </tr>`;
+                    });
+                    $('#CustomerList > tbody').html(rows);
+                },
+            });   
+        });
+    });
+</script>
+
+{% endblock %}
+</body>
+</html>
